@@ -1,0 +1,290 @@
+{
+  "duplicateGroupCount": 9,
+  "groups": [
+    {
+      "groupId": "dlg-title-group-4271e56a",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "school",
+          "displayTitleEn": "Academic Presentation — Academic / school 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "academic-presentation",
+          "normalizedAcceptedLevelId": "academic",
+          "rawTitleEn": "Academic Presentation",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-academic-hypothesis-limitations-06"
+          ]
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "school",
+          "displayTitleEn": "Academic Presentation — Academic / school 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "academic-presentation-34",
+          "normalizedAcceptedLevelId": "academic",
+          "rawTitleEn": "Academic Presentation",
+          "relationshipToNewD19DialogueIds": []
+        }
+      ],
+      "rawTitleEn": "Academic Presentation"
+    },
+    {
+      "groupId": "dlg-title-group-dfea1528",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "health",
+          "displayTitleEn": "At the Pharmacy — Basic / health 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "pharmacy-basic",
+          "normalizedAcceptedLevelId": "basic",
+          "rawTitleEn": "At the Pharmacy",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-intermediate-medical-clarification-04"
+          ]
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "health",
+          "displayTitleEn": "At the Pharmacy — Beginner / health 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "pharmacy-10",
+          "normalizedAcceptedLevelId": "beginner",
+          "rawTitleEn": "At the Pharmacy",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-beginner-health-symptoms-04",
+            "dlg-d19-advanced-medical-second-opinion-04"
+          ]
+        }
+      ],
+      "rawTitleEn": "At the Pharmacy"
+    },
+    {
+      "groupId": "dlg-title-group-c47cda9d",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "daily life",
+          "displayTitleEn": "At the Post Office — Basic / daily life 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "post-office-basic",
+          "normalizedAcceptedLevelId": "basic",
+          "rawTitleEn": "At the Post Office",
+          "relationshipToNewD19DialogueIds": []
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "daily life",
+          "displayTitleEn": "At the Post Office — Basic / daily life 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "post-office-26",
+          "normalizedAcceptedLevelId": "basic",
+          "rawTitleEn": "At the Post Office",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-advanced-leadership-feedback-06"
+          ]
+        }
+      ],
+      "rawTitleEn": "At the Post Office"
+    },
+    {
+      "groupId": "dlg-title-group-032f7b50",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "school",
+          "displayTitleEn": "Describing a Photograph — Intermediate / school 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "describe-photo-intermediate",
+          "normalizedAcceptedLevelId": "intermediate",
+          "rawTitleEn": "Describing a Photograph",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-academic-hypothesis-limitations-06"
+          ]
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "school",
+          "displayTitleEn": "Describing a Photograph — Intermediate / school 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "photo-description-35",
+          "normalizedAcceptedLevelId": "intermediate",
+          "rawTitleEn": "Describing a Photograph",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-elementary-assignment-extension-04",
+            "dlg-d19-elementary-study-habits-08"
+          ]
+        }
+      ],
+      "rawTitleEn": "Describing a Photograph"
+    },
+    {
+      "groupId": "dlg-title-group-52e3e60b",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "daily life",
+          "displayTitleEn": "Discussing the News — Advanced / daily life 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "news-advanced",
+          "normalizedAcceptedLevelId": "advanced",
+          "rawTitleEn": "Discussing the News",
+          "relationshipToNewD19DialogueIds": []
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "daily life",
+          "displayTitleEn": "Discussing the News — Advanced / daily life 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "news-discussion-37",
+          "normalizedAcceptedLevelId": "advanced",
+          "rawTitleEn": "Discussing the News",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-starter-daily-routine-08",
+            "dlg-d19-basic-buying-bread-02"
+          ]
+        }
+      ],
+      "rawTitleEn": "Discussing the News"
+    },
+    {
+      "groupId": "dlg-title-group-80ca69f6",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "daily life",
+          "displayTitleEn": "Shopping for Clothes — Beginner / daily life 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "clothes-shopping-beginner",
+          "normalizedAcceptedLevelId": "beginner",
+          "rawTitleEn": "Shopping for Clothes",
+          "relationshipToNewD19DialogueIds": []
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "daily life",
+          "displayTitleEn": "Shopping for Clothes — Beginner / daily life 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "clothes-store-27",
+          "normalizedAcceptedLevelId": "beginner",
+          "rawTitleEn": "Shopping for Clothes",
+          "relationshipToNewD19DialogueIds": []
+        }
+      ],
+      "rawTitleEn": "Shopping for Clothes"
+    },
+    {
+      "groupId": "dlg-title-group-5bbab52e",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "travel",
+          "displayTitleEn": "Taking a Taxi — Basic / travel 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "taxi-ride-basic",
+          "normalizedAcceptedLevelId": "basic",
+          "rawTitleEn": "Taking a Taxi",
+          "relationshipToNewD19DialogueIds": []
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "travel",
+          "displayTitleEn": "Taking a Taxi — Beginner / travel 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "taxi-route-04",
+          "normalizedAcceptedLevelId": "beginner",
+          "rawTitleEn": "Taking a Taxi",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-intermediate-housing-options-02",
+            "dlg-d19-intermediate-community-service-plan-03"
+          ]
+        }
+      ],
+      "rawTitleEn": "Taking a Taxi"
+    },
+    {
+      "groupId": "dlg-title-group-6559a278",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "daily life",
+          "displayTitleEn": "Talking About Hobbies — Beginner / daily life 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "hobbies-beginner",
+          "normalizedAcceptedLevelId": "beginner",
+          "rawTitleEn": "Talking About Hobbies",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-beginner-travel-directions-01",
+            "dlg-d19-intermediate-deadline-negotiation-05",
+            "dlg-d19-advanced-formal-service-complaint-02"
+          ]
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "family",
+          "displayTitleEn": "Talking About Hobbies — Beginner / family 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "hobbies-39",
+          "normalizedAcceptedLevelId": "beginner",
+          "rawTitleEn": "Talking About Hobbies",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-starter-family-members-03",
+            "dlg-d19-beginner-family-responsibilities-05",
+            "dlg-d19-elementary-family-event-plan-06",
+            "dlg-d19-intermediate-family-time-balance-09"
+          ]
+        }
+      ],
+      "rawTitleEn": "Talking About Hobbies"
+    },
+    {
+      "groupId": "dlg-title-group-3b4be3ab",
+      "members": [
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "school",
+          "displayTitleEn": "University Application — Academic / school 1",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "university-application-academic",
+          "normalizedAcceptedLevelId": "academic",
+          "rawTitleEn": "University Application",
+          "relationshipToNewD19DialogueIds": [
+            "dlg-d19-starter-classroom-objects-02"
+          ]
+        },
+        {
+          "contentRelationship": "distinct-or-partial-overlap",
+          "contextLabel": "school",
+          "displayTitleEn": "University Application — Advanced / school 2",
+          "displayTitlePashto": "pending-human-title-translation",
+          "displayTitlePashtoStatus": "missing-pending-d25",
+          "legacyDialogueId": "university-application-31",
+          "normalizedAcceptedLevelId": "advanced",
+          "rawTitleEn": "University Application",
+          "relationshipToNewD19DialogueIds": []
+        }
+      ],
+      "rawTitleEn": "University Application"
+    }
+  ],
+  "phase": "I6H-D19",
+  "schemaVersion": "D19-1"
+}

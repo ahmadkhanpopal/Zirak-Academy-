@@ -1,0 +1,368 @@
+{
+  "artifactVersion": "I6H-D18A",
+  "count": 45,
+  "generatedAt": "2026-07-30T00:00:00.000Z",
+  "migrations": [
+    {
+      "d16PackId": "listen-pack-academic-01",
+      "d18Replacement": "listen-d18-aca-pack-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "D16 academic used misclassified simple sentences. D18 academic uses authored 140-220 word extended passages.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-academic-02",
+      "d18Replacement": "listen-d18-aca-pack-02",
+      "disposition": "retired-invalid-pack",
+      "equivalence": "none",
+      "note": "D16 tail had 7 items (below 8-item minimum). Retired; D18 academic pack created.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-advanced-01",
+      "d18Replacement": "listen-d18-adv-pack-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "D16 advanced used misclassified simple sentences. D18 advanced uses authored 100-170 word passages.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-advanced-02",
+      "d18Replacement": "listen-d18-adv-pack-02",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "See above.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-advanced-03",
+      "d18Replacement": "listen-d18-adv-pack-03",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "See above.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-advanced-04",
+      "d18Replacement": "listen-d18-adv-pack-04",
+      "disposition": "retired-invalid-pack",
+      "equivalence": "none",
+      "note": "D16 tail had 1 item (below 8-item minimum). Retired; D18 advanced pack created.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-01",
+      "d18Replacement": "listen-d18-basic-school-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-02",
+      "d18Replacement": "listen-d18-basic-family-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-03",
+      "d18Replacement": "listen-d18-basic-market-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-04",
+      "d18Replacement": "listen-d18-basic-health-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-05",
+      "d18Replacement": "listen-d18-basic-transport-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-06",
+      "d18Replacement": "listen-d18-basic-time-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-07",
+      "d18Replacement": "listen-d18-basic-communication-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-08",
+      "d18Replacement": "listen-d18-basic-work-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-09",
+      "d18Replacement": null,
+      "disposition": "retained-as-free-practice-draft",
+      "equivalence": "none",
+      "note": "Retained as Free Practice draft only.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-basic-10",
+      "d18Replacement": null,
+      "disposition": "retired-invalid-pack",
+      "equivalence": "none",
+      "note": "D16 tail had 4 items (below 5-item minimum). Retired.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-01",
+      "d18Replacement": "listen-d18-beginner-daily-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-02",
+      "d18Replacement": "listen-d18-beginner-work-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-03",
+      "d18Replacement": "listen-d18-beginner-health-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-04",
+      "d18Replacement": "listen-d18-beginner-education-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-05",
+      "d18Replacement": "listen-d18-beginner-shopping-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-06",
+      "d18Replacement": "listen-d18-beginner-culture-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-07",
+      "d18Replacement": "listen-d18-beginner-communication-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-08",
+      "d18Replacement": "listen-d18-beginner-places-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-beginner-09",
+      "d18Replacement": "listen-d18-beginner-language-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-elementary-01",
+      "d18Replacement": "listen-d18-elementary-daily-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-elementary-02",
+      "d18Replacement": "listen-d18-elementary-work-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-elementary-03",
+      "d18Replacement": "listen-d18-elementary-health-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-elementary-04",
+      "d18Replacement": "listen-d18-elementary-education-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-elementary-05",
+      "d18Replacement": "listen-d18-elementary-transport-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-elementary-06",
+      "d18Replacement": "listen-d18-elementary-culture-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-elementary-07",
+      "d18Replacement": "listen-d18-elementary-family-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-intermediate-01",
+      "d18Replacement": "listen-d18-intermediate-classroom-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "D16 intermediate used misclassified simple sentences. D18 uses authored dialogues.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-intermediate-02",
+      "d18Replacement": "listen-d18-intermediate-health-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "See above.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-intermediate-03",
+      "d18Replacement": "listen-d18-intermediate-plans-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "See above.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-intermediate-04",
+      "d18Replacement": "listen-d18-intermediate-directions-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "See above.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-intermediate-05",
+      "d18Replacement": "listen-d18-intermediate-work-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "none",
+      "note": "See above.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-starter-01",
+      "d18Replacement": "listen-d18-starter-greetings-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection; D18 pack editorially curated.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-starter-02",
+      "d18Replacement": "listen-d18-starter-classroom-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-starter-03",
+      "d18Replacement": "listen-d18-starter-numbers-time-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-starter-04",
+      "d18Replacement": "listen-d18-starter-family-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-starter-05",
+      "d18Replacement": "listen-d18-starter-daily-actions-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-starter-06",
+      "d18Replacement": "listen-d18-starter-food-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-starter-07",
+      "d18Replacement": "listen-d18-starter-places-01",
+      "disposition": "superseded-by-d18-pack",
+      "equivalence": "partial",
+      "note": "Different item selection.",
+      "progressTransfer": false
+    },
+    {
+      "d16PackId": "listen-pack-starter-08",
+      "d18Replacement": "listen-d18-starter-requests-01",
+      "disposition": "retired-invalid-pack",
+      "equivalence": "none",
+      "note": "D16 tail had 3 items (below 4-item minimum). Retired; D18 pack created.",
+      "progressTransfer": false
+    }
+  ],
+  "progressPolicy": "D16 progress remains under original keys; no silent reinterpretation."
+}

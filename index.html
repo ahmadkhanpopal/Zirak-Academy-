@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Zirak — English learning platform with Afghan Pashto support translation" name="description"/>
+<meta content="#1a3a5c" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="Zirak" name="apple-mobile-web-app-title"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<title>Zirak · ځيرک · v1.17I6H-D19 Dialogue Level Progression</title>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="app">
+<!-- ==================== BOTTOM NAV ==================== -->
+<nav aria-label="Main navigation" id="bottom-nav" role="navigation">
+<button class="nav-item active" data-screen="home" onclick="navigate('home')">
+<span class="nav-icon">🏠</span>
+<span class="nav-label">Home</span>
+<span class="nav-dari dari">کور</span>
+</button>
+<button class="nav-item" data-screen="dialogue" onclick="navigate('dialogue')">
+<span class="nav-icon">💬</span>
+<span class="nav-label">Dialogue</span>
+<span class="nav-dari dari">خبرې اترې</span>
+</button>
+<button class="nav-item" data-screen="topics" onclick="navigate('topics')">
+<span class="nav-icon">📝</span>
+<span class="nav-label">Topics</span>
+<span class="nav-dari dari">موضوعات</span>
+</button>
+<button class="nav-item" data-screen="stories" onclick="navigate('stories')">
+<span class="nav-icon">📖</span>
+<span class="nav-label">Stories</span>
+<span class="nav-dari dari">کیسې</span>
+</button>
+<button class="nav-item" data-screen="wordlab" onclick="navigate('wordlab')">
+<span class="nav-icon">🔤</span>
+<span class="nav-label">Words</span>
+<span class="nav-dari dari">کلیمې</span>
+</button>
+<button class="nav-item" data-screen="listening" onclick="navigate('listening')">
+<span class="nav-icon">🔊</span>
+<span class="nav-label">Listen</span>
+<span class="nav-dari dari">اوریدل</span>
+</button>
+<button class="nav-item" data-screen="review" onclick="navigate('review')">
+<span class="nav-icon">📊</span>
+<span class="nav-label">Review</span>
+<span class="nav-dari dari">بیاکتنه</span>
+</button>
+<button class="nav-item" data-screen="path" onclick="navigate('path')">
+<span class="nav-icon">🎯</span>
+<span class="nav-label">Path</span>
+<span class="nav-dari dari">لاره</span>
+</button>
+<button class="nav-item" data-screen="interview-wizard" onclick="openInterviewWizard()">
+<span class="nav-icon">🎤</span>
+<span class="nav-label">Interview</span>
+<span class="nav-dari dari">مرکه</span>
+</button>
+</nav>
+<!-- ==================== HOME SCREEN ==================== -->
+<section class="screen active" id="screen-home" role="main">
+<!-- ===== v1.15D: HERO SLIDESHOW ===== -->
+<div id="hero-slideshow-outer" style="position:relative;margin-bottom:12px;border-radius:18px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.18);">
+<!-- Slide track -->
+<div id="hero-slide-track" style="display:flex;transition:transform 0.45s cubic-bezier(.4,0,.2,1);will-change:transform;">
+</div>
+<!-- Dots -->
+<div id="hero-slide-dots" style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5;"></div>
+<!-- Theme toggle preserved -->
+<button class="theme-toggle-btn" id="theme-toggle-btn" onclick="cycleTheme()" style="position:absolute;top:10px;right:10px;z-index:6;opacity:0.85;" title="Toggle theme">🖥 Auto</button>
+<!-- Streak / offline badges preserved -->
+<div style="position:absolute;top:10px;left:10px;z-index:6;display:flex;gap:6px;">
+<span class="hero-badge" id="offline-badge">🟢 Ready offline</span>
+<span class="hero-badge" id="streak-badge">🔥 0 day streak</span>
+</div>
+</div>
+<!-- Hidden compat elements so existing JS refs don't error -->
+<div id="hero-card" style="display:none;"></div>
+<div id="hero-greeting" style="display:none;"></div>
+<div id="hero-greeting-dari" style="display:none;"></div>
+<div id="hero-streak-line" style="display:none;"></div>
+<div id="hero-quote" style="display:none;"></div>
+<!-- ===== v1.15D: TODAY GOAL + SUMMARY CARDS ===== -->
+<div id="home-today-goal-card" style="display:none;margin:0 0 10px;padding:12px 14px;background:var(--bg-card);border-radius:var(--radius-lg);border-left:4px solid var(--lapis);box-shadow:var(--shadow-sm);">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+<div>
+<div id="home-today-goal-en" style="font-size:14px;font-weight:700;color:var(--text);">Today: 0 min / goal 10 min</div>
+<div class="dari" id="home-today-goal-dari" style="font-size:13px;color:var(--text-muted);margin-top:2px;">نن: ۰ دقیقې / هدف ۱۰ دقیقې</div>
+</div>
+<div id="home-today-goal-check" style="font-size:22px;display:none;">✅</div>
+</div>
+<div style="background:var(--border);border-radius:4px;height:6px;overflow:hidden;margin-top:8px;">
+<div id="home-today-goal-bar" style="width:0%;background:var(--lapis);height:6px;border-radius:4px;transition:width 0.4s;"></div>
+</div>
+</div>
+<div id="home-today-summary-card" style="display:none;margin:0 0 10px;padding:12px 14px;background:var(--bg-card);border-radius:var(--radius-lg);border-left:4px solid var(--emerald);box-shadow:var(--shadow-sm);">
+<div style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;color:var(--text-muted);margin-bottom:6px;">📅 Today's Summary · د نن لنډیز</div>
+<div id="home-today-summary-en" style="font-size:14px;font-weight:600;color:var(--text);"></div>
+<div class="dari" id="home-today-summary-dari" style="font-size:13px;color:var(--text-muted);margin-top:3px;"></div>
+<div id="home-today-summary-motivation" style="font-size:13px;color:var(--emerald);font-weight:700;margin-top:5px;"></div>
+</div>
+<!-- I6H-D11B: Placement onboarding — prominent Home card for new/unplaced students -->
+<div id="home-placement-onboarding-card" style="display:none;margin:0 0 10px;"></div>
+<!-- I6H-D13: Personalized Learning Plan — compact Home dashboard card -->
+<div id="home-personal-plan-card" style="display:none;margin:0 0 10px;"></div>
+<!-- I6H-D2: Daily Academy Test Card — visible in daily learning flow -->
+<div id="home-daily-test-card" style="display:none;margin:0 0 10px;">
+</div>
+<!-- ===== v1.15D: SRS DUE REVIEW CARD ===== -->
+<div id="home-due-review-card" style="display:none;margin:0 0 10px;padding:12px 14px;background:var(--bg-card);border-radius:var(--radius-lg);border-left:4px solid var(--gold);box-shadow:var(--shadow-sm);">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;">
+<div>
+<div id="home-due-review-en" style="font-size:14px;font-weight:700;color:var(--text);">Due for Review: 0 words</div>
+<div class="dari" id="home-due-review-dari" style="font-size:13px;color:var(--text-muted);margin-top:2px;">د نن بیاکتنې لپاره: ۰ کلیمې</div>
+</div>
+<button id="home-due-review-btn" onclick="zirakOpenDueReview()" style="display:none;background:var(--gold);color:#fff;border:none;border-radius:10px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;flex-shrink:0;">Review Now</button>
+</div>
+</div>
+<!-- ===== WEEKLY REPORT BANNER v1.11H ===== -->
+<div id="weekly-report-banner" style="display:none;margin:0 0 12px;padding:10px 14px;background:#fef3c7;border-radius:10px;border-left:3px solid #f59e0b;display:none;flex-direction:row;align-items:center;gap:10px;flex-wrap:wrap;">
+<span style="font-size:13px;font-weight:600;color:#92400e;flex:1;min-width:0;">📊 Weekly report ready — share with your father?</span>
+<div style="display:flex;gap:8px;flex-shrink:0;">
+<button id="weekly-share-btn" onclick="sendWeeklyReport()" style="background:#25D366;color:#fff;border:none;border-radius:8px;padding:7px 13px;font-size:12px;font-weight:700;cursor:pointer;">Share on WhatsApp</button>
+<button id="weekly-later-btn" onclick="dismissWeeklyBanner()" style="background:rgba(146,64,14,0.1);color:#92400e;border:1px solid rgba(146,64,14,0.25);border-radius:8px;padding:7px 11px;font-size:12px;font-weight:600;cursor:pointer;">Later</button>
+</div>
+</div>
+<!-- ===== SCHOOL PATH HOME CARD (v1.7) ===== -->
+<div class="school-home-card" id="school-home-card">
+<div class="sh-label">🎓 School Path · د ښوونځي لاره</div>
+<div class="sh-title" id="sh-class-title">Start Here</div>
+<div class="sh-sub" id="sh-unit-sub">New student? Start School Path for guided lessons.</div>
+<div class="sh-progress"><div class="sh-progress-fill" id="sh-progress-fill" style="width:0%"></div></div>
+<div class="sh-btns">
+<button class="sh-btn-primary" id="sh-continue-btn" onclick="continueSchoolPath()">▶ Continue My Lesson</button>
+<button class="sh-btn-secondary" onclick="navigate('path')">🎓 School Path</button>
+<button class="sh-btn-secondary" onclick="openFreePractice()">🎲 Free Practice</button>
+</div>
+</div>
+<!-- ===== v1.17A: JUST PRACTICE CARD ===== -->
+<div aria-label="Start Quick Practice session" class="qp-home-card" onclick="openQuickPractice()" onkeydown="if(event.key==='Enter'||event.key===' ')openQuickPractice()" onpointerdown="this.style.transform='scale(0.97)'" onpointerleave="this.style.transform=''" onpointerup="this.style.transform=''" role="button" tabindex="0">
+<div class="qp-home-card-inner">
+<div class="qp-home-icon">🎯</div>
+<div class="qp-home-text">
+<div class="qp-home-title">Just Practice</div>
+<div class="qp-home-sub">Start mixed English practice immediately.</div>
+<div class="qp-home-pashto pashto" dir="rtl" lang="ps">همدا اوس د انګلیسي تمرین پیل کړه.</div>
+</div>
+<button aria-label="Start Now" class="qp-home-btn" onclick="event.stopPropagation();openQuickPractice()">Start Now ›</button>
+</div>
+</div>
+<!-- Mode selector -->
+<div class="section-title">
+<span>Learning Mode</span>
+<span class="dari">د زده کړې حالت</span>
+</div>
+<div class="mode-selector">
+<button class="mode-btn" data-mode="english" onclick="setMode('english')">
+<span class="mode-icon">🇬🇧</span>
+<span class="mode-en">English Focus</span>
+<span class="mode-dari dari">د انګلیسي تمرکز</span>
+</button>
+<button class="mode-btn active" data-mode="parallel" onclick="setMode('parallel')">
+<span class="mode-icon">↔️</span>
+<span class="mode-en">Parallel</span>
+<span class="mode-dari dari">موازي</span>
+</button>
+
+</div>
+<!-- Daily Challenge -->
+<div class="section-title">
+<span>Daily Challenge</span>
+<span class="dari">د ورځې ننګونه</span>
+</div>
+<div class="card" onclick="navigate('dialogue')" style="cursor:pointer;">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+<span style="font-size:24px;">🎯</span>
+<div>
+<div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--gold);">TODAY'S CHALLENGE</div>
+<div style="font-size:14px;font-weight:700;">Greetings &amp; Introductions</div>
+</div>
+<span style="margin-left:auto;font-size:20px;">›</span>
+</div>
+<div class="bilingual-block">
+<div class="en-text" id="daily-challenge-en">"Good morning! How are you today?"</div>
+<div class="dari-text" id="daily-challenge-dari">«سهار مو پخیر! نن څنګه یاست؟»</div>
+</div>
+</div>
+<!-- Progress Rings -->
+<div class="section-title">
+<span>Your Progress</span>
+<span class="dari">ستاسو پرمختګ</span>
+</div>
+<div class="card">
+<div class="streak-bar" id="progress-rings">
+<div class="progress-ring" style="text-align:center;">
+<svg height="80" viewbox="0 0 80 80" width="80">
+<circle class="ring-bg" cx="40" cy="40" r="34"></circle>
+<circle class="ring-fill" cx="40" cy="40" id="ring-en" r="34" stroke="#1a3a5c" stroke-dasharray="214" stroke-dashoffset="214"></circle>
+</svg>
+<div class="ring-label" style="position:relative;margin-top:-70px;height:80px;">
+<div id="ring-en-val" style="font-size:20px;font-weight:800;">0</div>
+<div class="ring-sublabel">English<br/>days</div>
+</div>
+</div>
+<div class="progress-ring" style="text-align:center;">
+<svg height="80" viewbox="0 0 80 80" width="80">
+<circle class="ring-bg" cx="40" cy="40" r="34"></circle>
+<circle class="ring-fill" cx="40" cy="40" id="ring-dari" r="34" stroke="#d4a017" stroke-dasharray="214" stroke-dashoffset="214"></circle>
+</svg>
+<div class="ring-label" style="position:relative;margin-top:-70px;height:80px;">
+<div id="ring-dari-val" style="font-size:20px;font-weight:800;">0</div>
+<div class="ring-sublabel dari" style="font-size:9px;">پښتو</div>
+</div>
+</div>
+<div class="progress-ring" style="text-align:center;">
+<svg height="80" viewbox="0 0 80 80" width="80">
+<circle class="ring-bg" cx="40" cy="40" r="34"></circle>
+<circle class="ring-fill" cx="40" cy="40" id="ring-topics" r="34" stroke="#1a6b4a" stroke-dasharray="214" stroke-dashoffset="184"></circle>
+</svg>
+<div class="ring-label" style="position:relative;margin-top:-70px;height:80px;">
+<div id="ring-topics-val" style="font-size:20px;font-weight:800;">0</div>
+<div class="ring-sublabel">Topics<br/>done</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Access -->
+<div class="section-title">
+<span>Quick Access</span>
+<span class="dari">چټک لاسرسی</span>
+</div>
+<div class="quick-grid">
+<button class="quick-btn" onclick="navigate('dialogue')">
+<span class="q-icon">🎙️</span>
+<span class="q-en">Practice Speaking</span>
+<span class="q-dari dari">د خبرو تمرین</span>
+</button>
+<button class="quick-btn" onclick="navigate('stories')">
+<span class="q-icon">📖</span>
+<span class="q-en">Read a Story</span>
+<span class="q-dari dari">یوه کیسه ولوله</span>
+</button>
+<button class="quick-btn" onclick="navigate('wordlab')">
+<span class="q-icon">✨</span>
+<span class="q-en">Word of the Day</span>
+<span class="q-dari dari">د ورځې کلیمه</span>
+</button>
+<button class="quick-btn" onclick="navigate('review')">
+<span class="q-icon">📈</span>
+<span class="q-en">My Progress</span>
+<span class="q-dari dari">زما پرمختګ</span>
+</button>
+</div>
+<!-- My Progress Dashboard Card -->
+<div class="card" onclick="navigate('progress')" style="cursor:pointer;">
+<div style="display:flex;align-items:center;gap:12px;">
+<span style="font-size:28px;">📊</span>
+<div style="flex:1;">
+<div style="font-size:15px;font-weight:700;color:var(--text);">My Progress</div>
+<div style="font-size:12px;color:var(--text-muted);margin-top:2px;">View streak, word mastery &amp; quiz history</div>
+</div>
+<span style="font-size:20px;color:var(--text-muted);">›</span>
+</div>
+</div>
+<!-- Grammar Mini-Cards v1.11G -->
+<div class="card" onclick="navigate('grammar')" style="cursor:pointer;">
+<div style="display:flex;align-items:center;gap:12px;">
+<span style="font-size:28px;">📖</span>
+<div style="flex:1;">
+<div style="font-size:15px;font-weight:700;color:var(--text);">Grammar</div>
+<div style="font-size:12px;color:var(--text-muted);margin-top:2px;">د انګلیسي ګرامر د پښتو ملاتړ سره — ۱۰ کارتونه</div>
+</div>
+<span style="font-size:20px;color:var(--text-muted);">›</span>
+</div>
+</div>
+<!-- ===== v1.16I: INTERVIEW WIZARD HOME CARD ===== -->
+<div class="card" onclick="openInterviewWizard()" style="cursor:pointer;background:linear-gradient(135deg,#1a3a5c 0%,#1a6b4a 100%);border:none;margin-bottom:10px;">
+<div style="display:flex;align-items:center;gap:14px;">
+<span style="font-size:36px;flex-shrink:0;">🎤</span>
+<div style="flex:1;min-width:0;">
+<div style="font-size:16px;font-weight:900;color:#fff;letter-spacing:-0.2px;">Interview Wizard</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.82);margin-top:3px;line-height:1.4;">Practice interviews for school, phone, jobs, Kandahar NGO/UN, HSO delivery, and academy level.</div>
+<div style="font-size:12.5px;font-weight:600;color:rgba(255,255,255,0.92);margin-top:4px;line-height:1.5;" class="pashto" dir="rtl" lang="ps">د مرکې تمرین — له پیل څخه تر اکاډمیکې کچې پورې</div>
+</div>
+<button onclick="event.stopPropagation();openInterviewWizard()" style="background:rgba(255,255,255,0.18);color:#fff;border:1.5px solid rgba(255,255,255,0.35);border-radius:10px;padding:9px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0;">Start Practice</button>
+</div>
+</div>
+<!-- Install Banner -->
+<div id="install-bar">
+<span style="font-size:20px;">📲</span>
+<div class="install-text">
+<div style="font-weight:700;font-size:14px;">Install Zirak App</div>
+<div style="font-size:12px;opacity:0.8;">Use offline on your phone</div>
+</div>
+<button class="btn btn-gold btn-sm" onclick="installPWA()">Install</button>
+<button class="btn-ghost btn-sm" onclick="document.getElementById('install-bar').style.display='none'" style="background:rgba(255,255,255,0.1);border:none;color:white;cursor:pointer;padding:4px 8px;border-radius:8px;">✕</button>
+</div>
+<div style="height:8px;"></div>
+</section>
+<!-- ==================== PROGRESS DASHBOARD v1.11G ==================== -->
+<section class="screen" id="screen-progress">
+<div class="page-header">
+<div style="display:flex;align-items:center;gap:10px;">
+<button onclick="navigate('home')" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);color:white;border-radius:8px;padding:7px 12px;cursor:pointer;font-size:14px;font-weight:600;flex-shrink:0;">← Home</button>
+<div>
+<h1 style="font-size:20px;">My Progress</h1>
+<div class="dari" style="font-size:14px;color:rgba(255,255,255,0.85);">زما پرمختګ</div>
+</div>
+</div>
+</div>
+<!-- Overall Stats -->
+<div class="section-title">
+<span>Overall Stats</span>
+<span class="dari">ټولې شمېرې</span>
+</div>
+<div class="card" id="pd-overall" style="padding:0;overflow:hidden;"></div>
+<!-- Streak -->
+<div class="section-title">
+<span>Streak &amp; Habit</span>
+<span class="dari">لړۍ او عادت</span>
+</div>
+<div class="card" id="pd-streak"></div>
+<!-- Word Mastery per Set -->
+<div class="section-title">
+<span>Word Mastery per Set</span>
+<span class="dari">د کلیمو مهارت</span>
+</div>
+<div id="pd-mastery"></div>
+<!-- Recent Quiz History -->
+<div class="section-title">
+<span>Recent Quiz History</span>
+<span class="dari">وروستی تاریخچه</span>
+</div>
+<div class="card" id="pd-history"></div>
+<!-- Strongest / Weakest Words -->
+<div class="section-title">
+<span>Strongest &amp; Weakest Words</span>
+<span class="dari">غښتلې او کمزورې کلیمې</span>
+</div>
+<div class="card" id="pd-words"></div>
+<div style="height:24px;"></div>
+<!-- Achievements v1.11H -->
+<div class="section-title">
+<span>Achievements</span>
+<span class="dari">لاسته راوړنې</span>
+</div>
+<div class="card" id="pd-badges"></div>
+<!-- ===== v1.15D: SPEAKING CONFIDENCE SUMMARY ===== -->
+<div class="section-title" style="margin-top:20px;">
+<span>How did speaking feel?</span>
+<span class="dari">خبرې کول څنګه احساس شول؟</span>
+</div>
+<div class="card" id="pd-confidence"></div>
+<!-- ===== v1.15D: SCORE TREND CHART ===== -->
+<div class="section-title" style="margin-top:20px;">
+<span>Score Trend · <span class="dari">د نمرو بهیر</span></span>
+</div>
+<div class="card" id="pd-score-chart"></div>
+<div style="height:24px;"></div>
+</section>
+<!-- ==================== DIALOGUE WIZARD · I6H-D19 ==================== -->
+<section class="screen" id="screen-dialogue">
+  <div class="page-header">
+    <div class="d19-page-header-row">
+      <div>
+        <h1>Dialogue Wizard</h1>
+        <div class="dari d19-header-subtitle">د خبرو جادوګر</div>
+      </div>
+      <div class="d19-header-actions">
+        <button class="btn btn-sm d19-header-icon-btn" onclick="openAIConv()" title="AI Conversation Partner">🤖</button>
+        <button class="btn btn-sm d19-header-icon-btn" onclick="openWriting()" title="Writing Feedback">📝</button>
+        <button class="btn btn-sm d19-header-icon-btn" onclick="openSettings()" title="Settings">⚙️</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card d19-official-card" id="d19-official-status" role="status" aria-live="polite">
+    <div class="d19-card-eyebrow">Official Dialogue curriculum</div>
+    <div class="d19-official-title">Owner approval is still pending.</div>
+    <div class="d19-official-copy">Normal student entry does not silently fall back to candidate or legacy content.</div>
+    <div class="dari d19-official-copy">رسمي نصاب لا د مالک د منظورۍ په تمه دی. نوماند او پخوانی تمرین په جلا لارو کې شته.</div>
+  </div>
+
+  <div class="d19-route-controls" id="dialogue-route-controls" aria-label="Dialogue route controls">
+    <button class="btn btn-outline d19-route-btn" id="d19-official-route-btn" onclick="openD19DialogueRoute('official')">
+      <span>Continue Assigned Dialogue</span>
+      <small>Official route</small>
+    </button>
+    <button class="btn btn-primary d19-route-btn" id="d19-candidate-route-btn" onclick="openD19DialogueRoute('candidate-preview')">
+      <span>Teacher/Pilot Preview</span>
+      <small>Owner Approval Pending</small>
+    </button>
+    <button class="btn btn-ghost d19-route-btn" id="d19-free-route-btn" onclick="openD19DialogueRoute('free-practice')">
+      <span>Free Practice</span>
+      <small>Legacy Micro-dialogues</small>
+    </button>
+  </div>
+
+  <div class="section-title mt-12">
+    <span>Accepted level</span>
+    <span class="dari">منل شوې کچه</span>
+  </div>
+  <div class="pill-group" id="level-pills" aria-label="Accepted Dialogue levels"></div>
+  <div class="d19-level-lock-note" id="d19-level-lock-note"></div>
+
+  <div class="section-title">
+    <span>Theme</span>
+    <span class="dari">موضوع</span>
+  </div>
+  <div class="pill-group" id="category-pills" aria-label="Dialogue theme filter"></div>
+
+  <div class="d19-route-status" id="d19-dialogue-status" role="status" aria-live="polite"></div>
+  <div id="dialogue-topic-list"></div>
+  <div class="d19-list-pager" id="d19-free-practice-page" hidden></div>
+
+  <div id="dialogue-practice-area" style="display:none;">
+    <div class="card d19-active-meta" id="d19-active-meta">
+      <div class="d19-active-meta-row">
+        <div>
+          <div class="d19-card-eyebrow" id="d19-governance-status">Dialogue session</div>
+          <div class="d19-active-title" id="d19-active-title"></div>
+          <div class="dari d19-active-title-ps" id="d19-active-title-pashto"></div>
+        </div>
+        <div class="d19-active-badges" id="d19-active-badges"></div>
+      </div>
+      <div class="d19-meta-grid">
+        <div><strong>Objective</strong><span id="d19-objective"></span></div>
+        <div><strong>Student task</strong><span id="d19-student-task"></span></div>
+        <div><strong>Support</strong><span id="d19-support-status"></span></div>
+        <div><strong>Progress</strong><span id="d19-progress-status"></span></div>
+      </div>
+      <div class="d19-session-controls">
+        <button class="btn btn-outline btn-sm" onclick="pauseD19DialogueSession()">⏸ Pause</button>
+        <button class="btn btn-outline btn-sm" onclick="resumeD19DialogueSession()">▶ Resume</button>
+        <button class="btn btn-ghost btn-sm" onclick="stopD19DialogueSession()">⏹ Stop</button>
+      </div>
+    </div>
+
+    <div id="replay-bar">
+      <button class="speak-btn speak-btn-lg" onclick="replayPrompt()" title="Replay prompt">🔊</button>
+      <div class="rb-text" id="replay-bar-text">Hear the current partner prompt again</div>
+      <span class="kbd-hint">Space = mic</span>
+    </div>
+
+    <div class="card" id="dialogue-prompt-card">
+      <div class="d19-prompt-head">
+        <div class="badge badge-lapis" id="dialogue-step-badge">Turn 1</div>
+        <div class="d19-prompt-actions">
+          <button class="speak-btn" onclick="replayPrompt()" title="Replay prompt">🔊</button>
+          <button class="btn btn-ghost btn-sm" onclick="closePractice()">✕ Exit</button>
+        </div>
+      </div>
+      <div class="bilingual-block">
+        <div class="en-text" id="dialogue-prompt-en"></div>
+        <div class="dari-text" id="dialogue-prompt-dari"></div>
+      </div>
+      <div class="phonetic" id="dialogue-phonetic" hidden></div>
+      <div class="d19-prompt-tools">
+        <button class="btn btn-outline btn-sm" onclick="replayPrompt()">🔊 Hear Again</button>
+        <button class="btn btn-outline btn-sm" id="dialogue-pronun-btn" onclick="togglePronun()" hidden>📚 English Pronunciation Support</button>
+      </div>
+    </div>
+
+    <div class="pronun-panel" id="pronun-panel"></div>
+
+    <div class="card d19-answer-card">
+      <div class="d19-answer-head">
+        <div class="d19-answer-label">Response support</div>
+        <button class="speak-btn" id="d19-model-audio-btn" onclick="replayAnswer()" title="Hear the model answer">🔊</button>
+      </div>
+      <div id="dialogue-answer-visibility" class="d19-answer-visibility"></div>
+      <div id="dialogue-answer-en" class="d19-answer-en"></div>
+      <div class="dari d19-answer-ps" id="dialogue-answer-dari"></div>
+      <button class="btn btn-ghost btn-sm" id="d19-reveal-model-btn" onclick="revealD19ModelAnswer()" hidden>Reveal model after my response</button>
+    </div>
+
+    <div class="speak-area">
+      <div id="speech-status" class="d19-speech-status">Tap the mic or press Space to speak</div>
+      <div class="dari d19-speech-status-ps" id="speech-status-dari">د خبرو پیل لپاره مایکروفون ټچ کړئ</div>
+      <button id="mic-btn" onclick="toggleSpeech()">🎙️</button>
+      <div class="support-recognition-notice" id="dari-recognition-notice">Pashto is visual support only. Speech practice listens to English.</div>
+      <div id="transcript-display" class="d19-transcript-display"></div>
+      <div class="d19-manual-fallback" hidden>
+        <div class="d19-manual-fallback-note">Use this only when speech recognition is unavailable. A typed response is scored by the same D19 contract; a teacher may instead record an unscored completion.</div>
+        <textarea class="d19-manual-fallback-input" rows="4" maxlength="1000" aria-label="Type the English Dialogue response" placeholder="Type the English response here…"></textarea>
+        <div class="d19-manual-fallback-actions">
+          <button class="btn btn-outline btn-sm" onclick="submitD19ManualTypingFallback()">Submit typed response</button>
+          <button class="btn btn-ghost btn-sm" onclick="recordD19TeacherUnscoredCompletion()">Teacher: record unscored completion</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="score-display" id="score-display">
+      <div class="d19-score-row">
+        <div>
+          <div class="d19-score-label" id="d19-score-label">Score</div>
+          <div class="score-number" id="score-num">0%</div>
+        </div>
+        <div class="d19-score-feedback-wrap">
+          <div id="score-feedback-en" class="d19-score-feedback"></div>
+          <div class="dari d19-score-feedback-ps" id="score-feedback-dari"></div>
+        </div>
+      </div>
+      <div id="score-meaning-area" style="display:none;margin:8px 0 4px;"></div>
+      <div class="word-highlights" id="word-highlights"></div>
+      <div class="d19-score-actions">
+        <button class="btn btn-primary btn-sm" onclick="nextStep()">Next ›</button>
+        <button class="btn btn-outline btn-sm" onclick="retryStep()">🔄 Try Again</button>
+        <button class="btn btn-sm d19-whatsapp-btn" onclick="sendWhatsAppReport({score:state.lastScore,sessionTitle:state.currentDialogue?state.currentDialogue.titleEn:'Dialogue',sectionType:'Dialogue',classLabel:state.schoolCurrentClass||state.level})">📲 Share to Father on WhatsApp</button>
+        <button class="btn btn-sm d19-parent-seen-btn" onclick="markFatherSeen({score:state.lastScore,sessionTitle:state.currentDialogue?state.currentDialogue.titleEn:'Dialogue',classLabel:state.schoolCurrentClass||state.level})">👁 Mark as Father Seen</button>
+      </div>
+      <div class="d19-proof-note">ℹ️ This proof code is only a reference for the parent report. It does not block lessons.</div>
+
+      <div id="confidence-rating-area" class="d19-confidence-area">
+        <div class="d19-confidence-title">How did speaking feel? · خبرې کول څنګه وو؟</div>
+        <div id="confidence-buttons" class="d19-confidence-buttons">
+          <button onclick="saveConfidence('hard')" title="Hard">😰<span>Hard</span></button>
+          <button onclick="saveConfidence('ok')" title="OK">😐<span>OK</span></button>
+          <button onclick="saveConfidence('easy')" title="Easy">😊<span>Easy</span></button>
+        </div>
+        <div id="confidence-thanks" class="d19-confidence-thanks">
+          <div>Thanks! Saved.</div>
+          <div class="dari">مننه! ثبت شو.</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ai-feedback-area" class="d19-ai-feedback-area">
+      <div class="d19-ai-feedback-label">🤖 AI Feedback</div>
+      <div class="card-inner" id="ai-feedback-content"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPICS STUDIO ==================== -->
+<section class="screen" id="screen-topics">
+<div class="page-header">
+<h1>Topic Studio</h1>
+<div class="dari" style="font-size:16px;color:rgba(255,255,255,0.85);">د موضوعاتو سټوډیو</div>
+</div>
+<div class="section-title mt-12">
+<span>Choose a Topic</span>
+<span class="dari">یو موضوع غوره کړه</span>
+</div>
+<div class="recommended-bar" onclick="zirakSpeakBannerHint('Open a topic, then tap Repeat Wizard to start auto practice. Each topic has paragraphs to read aloud and a writing area to practice with.')">
+<span style="font-size:18px;">⭐</span>
+<div>
+<div>Recommended: Repeat Wizard</div>
+<div class="rb-dari">سپارښتنه: د تکرار جادوګر</div>
+</div>
+</div>
+<div id="topics-list"></div>
+<!-- Topic wizard area -->
+<div id="topic-wizard-area" style="display:none;">
+<div class="card">
+<button class="btn btn-ghost btn-sm" onclick="closeTopicWizard()" style="margin-bottom:12px;">← Back</button>
+<div id="topic-wizard-title" style="font-size:18px;font-weight:800;"></div>
+<div class="dari" id="topic-wizard-title-dari" style="font-size:17px;"></div>
+</div>
+<div class="section-title">
+<span>Choose a Wizard Mode</span>
+<span class="dari">د تمرین حالت</span>
+</div>
+<div class="mode-grid" id="wizard-modes-grid"></div>
+<div id="topic-practice-area"></div>
+</div>
+</section>
+<!-- ==================== STORY MODE ==================== -->
+<section class="screen" id="screen-stories">
+<div class="page-header">
+<h1>Story Mode</h1>
+<div class="dari" style="font-size:16px;color:rgba(255,255,255,0.85);">د کیسې حالت</div>
+</div>
+<div id="story-list-view">
+<div class="recommended-bar" onclick="zirakSpeakBannerHint('Open a story, then tap Start Auto Practice to begin. Each story has English text with Pashto support so you can read and listen together.')" style="margin-top:12px;">
+<span style="font-size:18px;">⭐</span>
+<div>
+<div>Open a story → tap Start Auto Practice</div>
+<div class="rb-dari">یوه کیسه پرانیزه ← اتومات تمرین پیل کړه</div>
+</div>
+</div>
+<div class="section-title mt-12">
+<span>Stories</span>
+<span class="dari">کیسې</span>
+</div>
+<div id="stories-grid"></div>
+</div>
+<div id="story-reader-view" style="display:none;">
+<div style="padding:12px 16px;display:flex;gap:10px;">
+<button class="btn btn-ghost btn-sm" onclick="closeStory()">← Back</button>
+<div style="display:flex;gap:8px;flex:1;justify-content:flex-end;flex-wrap:wrap;">
+<button class="btn btn-sm btn-outline" id="story-read-btn" onclick="setStoryMode('read')">📖 Read</button>
+<button class="btn btn-sm btn-outline" id="story-listen-btn" onclick="setStoryMode('listen')">🔊 Listen</button>
+<button class="btn btn-sm btn-primary" onclick="startStoryPractice()">⚡ Auto Practice</button>
+</div>
+</div>
+<div id="story-content-area"></div>
+</div>
+</section>
+<!-- ==================== WORD LAB ==================== -->
+<section class="screen" id="screen-wordlab">
+<div class="page-header">
+<h1>Word Lab</h1>
+<div class="dari" style="font-size:16px;color:rgba(255,255,255,0.85);">د کلیمو لابراتوار</div>
+</div>
+<!-- Word of the Day — hidden from main view; data elements kept for JS logic -->
+<div id="wotd-hidden-data" style="display:none;">
+<div id="wotd-en"></div>
+<div id="wotd-dari"></div>
+<div id="wotd-pos"></div>
+<div id="wotd-en-example"></div>
+<div id="wotd-dari-example"></div>
+</div>
+<!-- Hero: Start Word Wizard — main action -->
+<div style="padding:16px 16px 8px;">
+<div id="ww-hero-card" onclick="openWordWizardScreen()" onpointerdown="this.style.transform='scale(0.98)'" onpointerleave="this.style.transform=''" onpointerup="this.style.transform=''" style="
+        background: linear-gradient(135deg, var(--lapis) 0%, var(--lapis-light) 100%);
+        border-radius: var(--radius-xl);
+        padding: 22px 20px 18px;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(26,58,92,0.22);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: transform 0.15s, box-shadow 0.15s;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      ">
+<div style="font-size:44px;flex-shrink:0;line-height:1;">🧙</div>
+<div style="flex:1;min-width:0;">
+<div style="font-size:20px;font-weight:900;color:#ffffff;letter-spacing:-0.3px;">Start Word Wizard</div>
+<div style="font-size:13px;color:rgba(255,255,255,0.82);margin-top:4px;line-height:1.4;">
+            Practice a full word set with listening, speaking, scoring, and a result card.
+          </div>
+<div class="dari" style="font-size:12px;color:rgba(255,255,255,0.65);margin-top:4px;">د کلیمو استاد — بشپړ تمرین د نمرو سره</div>
+</div>
+<div style="font-size:22px;color:rgba(255,255,255,0.7);flex-shrink:0;">›</div>
+</div>
+</div>
+<!-- Tabs (v1.10F: Flashcards tab hidden — wordtab-flashcard div kept for JS compat) -->
+<div class="pill-group" style="margin-top:8px;">
+<button class="pill active" id="tab-sets" onclick="showWordTab('sets')">Word Sets</button>
+<button class="pill" id="tab-quiz" onclick="showWordTab('quiz')">Quiz</button>
+<button class="pill" id="tab-saved" onclick="showWordTab('saved')">Saved 🔖</button>
+<button class="pill" id="tab-mistakes" onclick="showWordTab('mistakes')">❌ My Mistakes</button>
+<button class="pill" id="tab-duereview" onclick="showWordTab('duereview')">🔁 Review Due</button>
+</div>
+<!-- Word Sets -->
+<div id="wordtab-sets">
+<div class="wordset-grid" id="wordset-grid"></div>
+</div>
+<!-- Flashcards -->
+<div id="wordtab-flashcard" style="display:none;">
+<div id="flashcard-set-selector" style="padding:0 16px 12px;">
+<div style="font-size:14px;color:var(--text-muted);">Select a word set to study:</div>
+<div class="pill-group mt-8" id="fc-set-pills"></div>
+</div>
+<div class="flashcard-container" id="flashcard-container" style="display:none;">
+<div class="flashcard" id="flashcard" onclick="flipCard()">
+<div class="flashcard-face">
+<div id="fc-front" style="font-size:28px;font-weight:800;"></div>
+<div style="font-size:13px;color:var(--text-muted);margin-top:6px;">Tap to reveal</div>
+</div>
+<div class="flashcard-face flashcard-back">
+<div class="dari" id="fc-back-dari" style="font-size:24px;font-weight:700;"></div>
+<div id="fc-back-en" style="font-size:16px;margin-top:8px;color:var(--text-muted);"></div>
+<div id="fc-back-example" style="font-size:12px;color:var(--text-muted);margin-top:8px;font-style:italic;"></div>
+</div>
+</div>
+<div style="display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap;">
+<button class="btn btn-ghost btn-sm" onclick="fcHear()">🔊 Hear</button>
+<button class="btn btn-outline btn-sm" onclick="fcSpeak()">🎙️ Speak &amp; Score</button>
+<button class="btn btn-danger btn-sm" onclick="rateCard('again')">Again ↩</button>
+<button class="btn btn-outline btn-sm" onclick="rateCard('hard')">Hard 😓</button>
+<button class="btn btn-emerald btn-sm" onclick="rateCard('easy')">Easy ✓</button>
+</div>
+<div id="fc-progress" style="text-align:center;margin-top:10px;font-size:13px;color:var(--text-muted);"></div>
+</div>
+</div>
+<!-- Quiz (v1.10G: spoken learning quiz) -->
+<div id="wordtab-quiz" style="display:none;">
+<!-- v1.11C: Smart Review button -->
+<div id="smart-review-container" style="padding:12px 16px 4px;"></div>
+<div id="quiz-set-selector" style="padding:0 16px 12px;">
+<div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Choose a word set to quiz:</div>
+<div class="pill-group mt-8" id="quiz-set-pills"></div>
+<!-- v1.11E: Sentence Practice button row — shown below word-quiz pills -->
+<div id="sp-btn-container" style="display:none;margin-top:14px;border-top:1px solid var(--divider);padding-top:12px;">
+<div style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">Sentence fill-in-the-blank practice:</div>
+<div class="pill-group mt-8" id="sp-set-pills"></div>
+</div>
+</div>
+<!-- quiz-area: rendered dynamically by wqRenderQuestion() / wqShowResult() -->
+<div id="quiz-area" style="display:none;"></div>
+</div>
+<!-- Word Wizard tab: hidden (Wizard now opens as focused overlay via hero card) -->
+<div id="wordtab-wizard" style="display:none;">
+<div style="padding:12px 16px 4px;">
+<div class="pill-group mt-8" id="ww-set-pills"></div>
+</div>
+<div id="ww-wizard-area" style="display:none;"></div>
+</div>
+<!-- Saved words -->
+<div id="wordtab-saved" style="display:none;">
+<div id="saved-words-list"></div>
+</div>
+<!-- ===== v1.15D: MY MISTAKES TAB ===== -->
+<div id="wordtab-mistakes" style="display:none;">
+<div id="mistakes-list"></div>
+<div style="margin-top:12px;text-align:center;">
+<button onclick="clearErrorBank()" style="background:none;border:none;color:var(--text-muted);font-size:12px;text-decoration:underline;cursor:pointer;padding:4px 8px;">Clear Error Bank</button>
+</div>
+</div>
+<!-- ===== v1.15D: REVIEW DUE WORDS TAB ===== -->
+<div id="wordtab-duereview" style="display:none;">
+<div id="duereview-list"></div>
+</div>
+</section>
+<!-- ==================== WORD WIZARD FOCUSED OVERLAY (v1.10E) ==================== -->
+<div id="ww-focused-overlay" style="
+    display:none;
+    position:fixed;
+    inset:0;
+    background:var(--bg);
+    z-index:500;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+  ">
+<!-- Header bar -->
+<div style="
+      background:var(--lapis);
+      padding:0 16px;
+      height:56px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:10;
+      flex-shrink:0;
+    ">
+<div style="display:flex;align-items:center;gap:10px;">
+<span style="font-size:22px;">🧙</span>
+<div>
+<div style="font-size:17px;font-weight:800;color:#ffffff;">Word Wizard</div>
+</div>
+</div>
+<button onclick="closeWordWizardScreen()" style="
+        background:rgba(255,255,255,0.18);
+        border:none;
+        color:#ffffff;
+        border-radius:50%;
+        width:36px;
+        height:36px;
+        font-size:18px;
+        cursor:pointer;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-shrink:0;
+      " title="Close Word Wizard">✕</button>
+</div>
+<!-- Selector panel (shown before wizard starts) -->
+<div id="ww-overlay-selector" style="padding:20px 16px 8px;">
+<div style="
+        background:var(--bg-card);
+        border-radius:var(--radius-lg);
+        padding:18px 16px;
+        margin-bottom:16px;
+        border:1px solid var(--border);
+      ">
+<div style="font-size:15px;font-weight:700;margin-bottom:4px;">Guided word practice</div>
+<div style="font-size:13px;color:var(--text-muted);line-height:1.5;">
+          Hear each word, repeat it twice, and get scored automatically. Weak words are saved for review.
+        </div>
+<div class="dari" style="font-size:12px;color:var(--text-muted);margin-top:6px;">
+          هره کلیمه واوره، دوه ځله یې تکرار کړه او نمره واخله.
+        </div>
+</div>
+<div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:10px;">Choose a word set:</div>
+<div class="pill-group" id="ww-overlay-set-pills" style="flex-wrap:wrap;gap:8px;"></div>
+</div>
+<!-- Active wizard area (populated by JS when set is chosen) -->
+<div id="ww-overlay-active" style="display:none;"></div>
+</div>
+<!-- ==================== LISTENING ROOM ==================== -->
+<section class="screen" id="screen-listening">
+<div class="page-header">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
+<div>
+<h1>Listening Room</h1>
+<div class="dari" style="font-size:16px;color:rgba(255,255,255,0.85);">د اوریدلو خونه</div>
+</div>
+<button onclick="exitListeningRoom()" class="zk-exit-btn" aria-label="Exit Listening Room and go Home" title="Exit — go Home">✕ Exit<span class="pashto" dir="rtl" lang="ps" style="display:block;font-size:11px;font-weight:600;">وتون</span></button>
+</div>
+</div>
+<!-- Practice mode options (v1.6) -->
+<div style="padding:12px 16px 4px;">
+<div class="recommended-bar" onclick="startListeningAutoPractice()" style="cursor:pointer;">
+<span style="font-size:20px;">⚡</span>
+<div>
+<div>Start Official Listening</div>
+<div class="rb-dari">رسمي اورېدنه پیل کړئ</div>
+</div>
+<span style="font-size:18px;margin-left:auto;">›</span>
+</div>
+<div class="practice-options-row" style="padding:0;margin-top:8px;">
+<button class="btn btn-outline btn-sm" onclick="startListeningManualPractice()">🖐 Manual Practice</button>
+<button class="btn btn-ghost btn-sm" onclick="showListenTab('repeat')">🔊 Listen Only</button>
+<!-- I6H-D18: bounded Free Practice sessions — 5/10/20 items from legacy library (not official curriculum) -->
+<button class="btn btn-ghost btn-sm" onclick="startListeningFreePractice5()" title="Free Practice — 5 legacy items (not official curriculum)">📚 Free 5</button>
+<button class="btn btn-ghost btn-sm" onclick="startListeningFreePractice10()" title="Free Practice — 10 legacy items (not official curriculum)">📚 Free 10</button>
+<button class="btn btn-ghost btn-sm" onclick="startListeningFreePractice20()" title="Free Practice — 20 legacy items (not official curriculum)">📚 Free 20</button>
+</div>
+<div class="d18-route-actions" aria-label="Listening route choices">
+  <button class="btn btn-outline btn-sm" id="d18-candidate-preview-btn" onclick="startListeningCandidatePreview('auto')">🧪 Teacher/Pilot Preview — Owner Approval Pending</button>
+  <div class="d18-route-note">Candidate preview is separate from official curriculum. Completion remains labelled candidate-preview.</div>
+</div>
+<div class="d18-active-pack-panel" id="d18-active-pack-panel" hidden>
+  <div class="d18-active-pack-head">
+    <div>
+      <div class="d18-active-pack-title" id="d18-active-pack-title"></div>
+      <div class="d18-active-pack-meta" id="d18-active-pack-meta"></div>
+    </div>
+    <span class="badge badge-gold" id="d18-active-pack-governance">Owner Approval Pending</span>
+  </div>
+  <div class="d18-stage-progress" id="d18-stage-progress"></div>
+  <div class="d18-passage-view" id="d18-passage-view" aria-live="polite"></div>
+  <div class="d18-session-controls">
+    <button class="btn btn-primary btn-sm" onclick="playD18WholePassage()">▶ Whole passage</button>
+    <button class="btn btn-outline btn-sm" onclick="playD18SelectedSection()">🔊 Selected section</button>
+    <button class="btn btn-ghost btn-sm" onclick="previousD18Section()">← Section</button>
+    <button class="btn btn-ghost btn-sm" onclick="nextD18Section()">Section →</button>
+    <button class="btn btn-ghost btn-sm" onclick="pauseD18ListeningSession()">⏸ Pause</button>
+    <button class="btn btn-ghost btn-sm" onclick="resumeD18ListeningSession()">▶ Resume</button>
+    <button class="btn btn-ghost btn-sm" onclick="stopD18ListeningSession()">⏹ Stop</button>
+    <button class="btn btn-outline btn-sm" onclick="completeD18ActiveStage()">✓ Complete stage</button>
+  </div>
+  <div class="d18-task-area" id="d18-task-area"></div>
+  <div class="d18-pack-summary" id="d18-pack-summary" hidden></div>
+</div>
+</div>
+<div class="pill-group mt-12" id="listen-tabs">
+<button class="pill active" id="ltab-repeat" onclick="showListenTab('repeat')">Listen &amp; Repeat</button>
+<button class="pill" id="ltab-shadow" onclick="showListenTab('shadow')">Shadowing</button>
+<button class="pill" id="ltab-dictation" onclick="showListenTab('dictation')">Dictation</button>
+<button class="pill" id="ltab-pairs" onclick="showListenTab('pairs')">Sound Pairs</button>
+<button class="pill" id="ltab-phonics" onclick="showListenTab('phonics')">Phonics</button>
+<button class="pill" id="ltab-minpairs" onclick="showListenTab('minpairs')">Minimal Pairs</button>
+</div>
+<!-- PHASE I6B2 — Part 4: per-mode guidance line, updated by showListenTab() -->
+<div class="zk-mode-hint" id="listen-mode-hint" style="display:none;">
+<div class="zk-mode-hint-row">
+<span class="zk-mode-hint-en zk-readable" id="listen-mode-hint-en"></span>
+<button type="button" class="zk-mode-hint-hear zk-choice-readable" id="listen-mode-hint-hear" onclick="hearListenModeGuide()">🔊 Hear</button>
+</div>
+<div class="zk-mode-hint-ps zk-pashto-readable pashto" dir="rtl" lang="ps" id="listen-mode-hint-ps"></div>
+</div>
+<!-- Listen & Repeat -->
+<div id="listentab-repeat">
+<!-- I6H-D18: D18 pack status shown in Repeat tab (governance label, pack info) -->
+<div id="d18-pack-status" style="padding:8px 16px 0;font-size:12px;"></div>
+<div class="listen-track">
+<div style="font-size:13px;opacity:0.7;margin-bottom:6px;">Listen, then repeat</div>
+<div id="listen-sentence-en" style="font-size:19px;font-weight:700;"></div>
+<div class="dari" id="listen-sentence-dari" style="font-size:17px;margin-top:6px;opacity:0.85;"></div>
+<!-- I6H-D18: current item label (pack item N of M — contentId) -->
+<div id="d18-repeat-item-label" style="font-size:11px;opacity:0.6;margin-top:4px;"></div>
+<div class="listen-controls">
+<button class="btn btn-sm" onclick="playListenSentence()" style="background:rgba(255,255,255,0.2);color:white;">🔊 Listen</button>
+<button class="btn btn-sm" onclick="startListenRepeat()" style="background:rgba(255,255,255,0.2);color:white;">🎙️ Repeat</button>
+<button class="btn btn-sm" onclick="nextListenSentence()" style="background:rgba(255,255,255,0.2);color:white;">Next →</button>
+</div>
+</div>
+<div class="card" id="listen-repeat-score" style="display:none;">
+<div id="lr-score-text" style="font-size:14px;font-weight:600;"></div>
+</div>
+</div>
+<!-- Shadowing -->
+<div id="listentab-shadow" style="display:none;">
+<div class="section-title">
+<span>Speed</span>
+<span class="dari">چټکتیا</span>
+</div>
+<div class="speed-btns" id="speed-btns">
+<button class="speed-btn" onclick="setSpeed(0.5)">0.5x</button>
+<button class="speed-btn" onclick="setSpeed(0.7)">0.7x</button>
+<button class="speed-btn active" onclick="setSpeed(1.0)">1.0x</button>
+<button class="speed-btn" onclick="setSpeed(1.2)">1.2x</button>
+</div>
+<div id="shadow-sentences" style="padding:0 16px;"></div>
+</div>
+<!-- Dictation -->
+<div id="listentab-dictation" style="display:none;">
+<div class="card">
+<div style="font-size:15px;font-weight:700;margin-bottom:10px;">🎧 Listen, then speak or type what you heard:</div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+<button class="btn btn-primary btn-sm" onclick="playDictation()">🔊 Play</button>
+<button class="btn btn-outline btn-sm" onclick="playDictation(true)">🐌 Slow</button>
+</div>
+<div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;">
+<input class="text-input" id="dictation-input" onkeypress="if(event.key==='Enter') checkDictation()" placeholder="Speak 🎙️ or type what you heard..." style="flex:1;min-width:0;" type="text"/>
+<button class="pe-mic-btn" id="dictation-mic-btn" onclick="dictationMicSpeak()" style="width:52px;height:52px;font-size:24px;flex-shrink:0;border-radius:50%;" title="Speak your answer — no keyboard needed">🎙️</button>
+</div>
+<div id="dictation-mic-status" style="font-size:12px;color:var(--text-muted);text-align:center;min-height:18px;margin-bottom:6px;"></div>
+<button class="btn btn-primary btn-full" onclick="checkDictation()">Check ✓</button>
+<div id="dictation-result" style="margin-top:10px;display:none;"></div>
+</div>
+<button class="btn btn-ghost btn-sm" onclick="nextDictation()" style="margin:0 16px;">Next sentence →</button>
+</div>
+<!-- Sound Pairs -->
+<div id="listentab-pairs" style="display:none;">
+<div class="section-title">
+<span>Common Pashto/English sound pairs</span>
+<span class="dari">ستونزمن غږیز جوړه</span>
+</div>
+<div id="sound-pairs-list" style="padding:0 16px;"></div>
+</div>
+<!-- Phonics Drill (v1.11D) -->
+<div id="listentab-phonics" style="display:none;">
+<!-- Group selector -->
+<div id="phonics-selector">
+<div class="section-title mt-8">
+<span>Choose a Sound to Practise</span>
+</div>
+<div id="phonics-group-list"></div>
+</div>
+<!-- Active drill -->
+<div id="phonics-drill-area" style="display:none;">
+<div class="phonics-round-info" id="phonics-round-info"></div>
+<div class="phonics-word-area">
+<button class="phonics-word-btn" id="phonics-word-a" onclick="phonicsTap('a')"></button>
+<button class="phonics-word-btn" id="phonics-word-b" onclick="phonicsTap('b')"></button>
+</div>
+<div class="phonics-feedback" id="phonics-feedback"></div>
+<div style="text-align:center;padding:0 16px 12px;">
+<button class="btn btn-ghost btn-sm" onclick="phonicsBackToGroups()">← Choose different sound</button>
+</div>
+</div>
+<!-- Result card area -->
+<div id="phonics-result-area" style="display:none;padding:0 0 16px;"></div>
+</div>
+<!-- Minimal Pairs Drill (v1.11D) -->
+<div id="listentab-minpairs" style="display:none;">
+<!-- Start area -->
+<div id="minpairs-selector">
+<div style="padding:16px 16px 8px;">
+<div style="font-size:14px;color:var(--text-muted);margin-bottom:12px;line-height:1.5;">
+            Listen to a word and tap the one you heard. Both words sound very similar — train your ear to hear the difference!
+          </div>
+<button class="btn btn-primary btn-full" onclick="startMinPairsDrill()">▶ Start Minimal Pairs Drill</button>
+<div id="minpairs-preview" style="margin-top:14px;"></div>
+</div>
+</div>
+<!-- Active drill -->
+<div id="minpairs-drill-area" style="display:none;">
+<div class="phonics-round-info" id="minpairs-round-info"></div>
+<div class="phonics-word-area">
+<button class="phonics-word-btn" id="minpairs-word-a" onclick="minPairsTap('a')"></button>
+<button class="phonics-word-btn" id="minpairs-word-b" onclick="minPairsTap('b')"></button>
+</div>
+<div class="phonics-feedback" id="minpairs-feedback"></div>
+<div style="text-align:center;padding:0 16px 12px;">
+<button class="btn btn-ghost btn-sm" onclick="minPairsBackToStart()">← Back to Start</button>
+</div>
+</div>
+<!-- Result card area -->
+<div id="minpairs-result-area" style="display:none;padding:0 0 16px;"></div>
+</div>
+</section>
+<!-- ==================== REVIEW / RESULTS ==================== -->
+<section class="screen" id="screen-review">
+<div class="page-header">
+<h1>Review &amp; Results</h1>
+<div class="dari" style="font-size:16px;color:rgba(255,255,255,0.85);">بیاکتنه او پایلې</div>
+</div>
+<!-- Summary cards -->
+<div class="section-title mt-12">
+<span>Today's Summary</span>
+<span class="dari">د نن لنډیز</span>
+</div>
+<div class="quick-grid" id="today-summary-grid">
+<div class="quick-btn" style="cursor:default;">
+<span class="q-icon" id="sum-sessions">0</span>
+<span class="q-en">Sessions</span>
+<span class="q-dari dari">ناستې</span>
+</div>
+<div class="quick-btn" style="cursor:default;">
+<span class="q-icon" id="sum-score">—</span>
+<span class="q-en">Avg Score</span>
+<span class="q-dari dari">منځنۍ نمره</span>
+</div>
+</div>
+<!-- Streak & Milestones -->
+<div class="section-title">
+<span>Streak &amp; Badges</span>
+<span class="dari">لړۍ او مډالونه</span>
+</div>
+<div class="card">
+<div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">
+<div id="review-streak" style="font-size:40px;font-weight:800;color:var(--gold);">0</div>
+<div>
+<div style="font-weight:700;">Day Streak 🔥</div>
+<div id="review-streak-msg" style="font-size:13px;color:var(--text-muted);">Start your streak today!</div>
+</div>
+</div>
+<div id="badges-area" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
+</div>
+<!-- Weak Areas -->
+<div class="section-title">
+<span>Needs Practice</span>
+<span class="dari">تمرین ته اړتیا لري</span>
+</div>
+<div class="card" id="weak-areas-list">
+<div class="empty-state">
+<div class="es-icon">🎯</div>
+<div class="es-text">Complete some practices to see weak areas.</div>
+<div class="es-dari dari">د کمزورو ځایونو لیدلو لپاره تمرین وکړئ.</div>
+</div>
+</div>
+<!-- History -->
+<div class="section-title">
+<span>Practice History</span>
+<span class="dari">د تمرین تاریخچه</span>
+</div>
+<div style="display:flex;gap:6px;padding:0 16px 10px;flex-wrap:wrap;">
+<button class="pill active" id="hf-all" onclick="filterHistory('all')">All</button>
+<button class="pill" id="hf-en" onclick="filterHistory('english')">English Focus</button>
+
+</div>
+<div class="card" id="history-list" style="padding:0;">
+<div class="empty-state" style="padding:32px 20px;">
+<div class="es-icon">📚</div>
+<div class="es-text">No practice history yet. Start learning!</div>
+<div class="es-dari dari">لا تاریخچه نشته. پیل وکړئ!</div>
+</div>
+</div>
+</section>
+<!-- ==================== LEARNING PATH ==================== -->
+<section class="screen" id="screen-path">
+<div class="page-header">
+<h1>School Path</h1>
+<div class="dari" style="font-size:16px;color:rgba(255,255,255,0.85);">د ښوونځي لاره</div>
+</div>
+<!-- School Path tabs -->
+<div class="pill-group" style="margin:0 0 4px;">
+<button class="pill active" id="sp-tab-path" onclick="showSchoolTab('path')">🎓 My Path</button>
+<button class="pill" id="sp-tab-placement" onclick="showSchoolTab('placement')">📋 Placement</button>
+<button class="pill" id="sp-tab-free" onclick="showSchoolTab('free')">🎲 Free Practice</button>
+</div>
+<!-- Path tab -->
+<div id="sp-view-path">
+<!-- Current unit panel (shown when inside a unit) -->
+<div id="sp-unit-panel" style="display:none;"></div>
+<!-- Guidance tip -->
+<div id="sp-guidance" style="padding:10px 16px 4px;">
+<div style="font-size:13px;color:var(--text-muted);background:var(--bg-card2);border-radius:var(--radius-sm);padding:10px 12px;">
+<span id="sp-guidance-text">👋 <strong>School Path</strong> = guided learning, step by step. Choose your class below to start. Use <strong>Placement</strong> to find your level, or <strong>Free Practice</strong> to explore freely.</span>
+</div>
+</div>
+<!-- Classes list -->
+<div id="sp-classes-list" style="margin-top:8px;"></div>
+</div>
+<!-- Placement tab -->
+<div id="sp-view-placement" style="display:none;">
+<!-- I6H-D12: ONE professional adaptive Placement Test (zirak-placement-engine.js) -->
+<div style="margin:12px 16px 0;">
+<div id="placement-engine-mount"></div>
+</div>
+</div>
+<!-- Free Practice tab -->
+<div id="sp-view-free" style="display:none;">
+<div style="padding:12px 16px 4px;font-size:13px;color:var(--text-muted);">
+        🎲 <strong>Free Practice</strong> — open practice, no level required. Jump into any section freely.
+      </div>
+<div style="padding:0 16px;display:grid;gap:10px;margin-top:4px;">
+<div class="free-practice-bar" onclick="navigate('dialogue')" style="cursor:pointer;">
+<div class="fp-icon">🎙️</div>
+<div class="fp-info">
+<div class="fp-title">Dialogue Practice</div>
+<div class="fp-sub dari">د خبرو تمرین — ۳۰+ خبرې اترې</div>
+</div>
+<span style="font-size:18px;color:var(--text-muted);">›</span>
+</div>
+<div class="free-practice-bar" onclick="navigate('stories')" style="cursor:pointer;">
+<div class="fp-icon">📖</div>
+<div class="fp-info">
+<div class="fp-title">Story Practice</div>
+<div class="fp-sub dari">د کیسې تمرین — لنډې کیسې</div>
+</div>
+<span style="font-size:18px;color:var(--text-muted);">›</span>
+</div>
+<div class="free-practice-bar" onclick="navigate('topics')" style="cursor:pointer;">
+<div class="fp-icon">💬</div>
+<div class="fp-info">
+<div class="fp-title">Topic Studio</div>
+<div class="fp-sub dari">د موضوعاتو سټوډیو — آزاد موضوعات</div>
+</div>
+<span style="font-size:18px;color:var(--text-muted);">›</span>
+</div>
+<div class="free-practice-bar" onclick="navigate('wordlab')" style="cursor:pointer;">
+<div class="fp-icon">🔤</div>
+<div class="fp-info">
+<div class="fp-title">Word Lab</div>
+<div class="fp-sub dari">د کلیمو لابراتوار — فلش کارت او کویز</div>
+</div>
+<span style="font-size:18px;color:var(--text-muted);">›</span>
+</div>
+<div class="free-practice-bar" onclick="navigate('listening')" style="cursor:pointer;">
+<div class="fp-icon">🔊</div>
+<div class="fp-info">
+<div class="fp-title">Listening Room</div>
+<div class="fp-sub dari">د اوریدلو خونه — د اوریدلو تمرین</div>
+</div>
+<span style="font-size:18px;color:var(--text-muted);">›</span>
+</div>
+<div class="free-practice-bar" onclick="navigate('review')" style="cursor:pointer;">
+<div class="fp-icon">📊</div>
+<div class="fp-info">
+<div class="fp-title">My Progress</div>
+<div class="fp-sub dari">زما پرمختګ — د تمرین تاریخچه</div>
+</div>
+<span style="font-size:18px;color:var(--text-muted);">›</span>
+</div>
+</div>
+</div>
+<!-- Proof code display (preserved from previous version) -->
+<div id="proof-area" style="display:none;">
+<div class="section-title">
+<span>Completion Code</span>
+<span class="dari">د بشپړولو کوډ</span>
+</div>
+<div class="proof-code-box">
+<div style="font-size:14px;opacity:0.8;">Your proof code:</div>
+<div class="proof-code" id="proof-code-val"></div>
+<div id="proof-topic-name" style="font-size:13px;opacity:0.7;margin-top:6px;"></div>
+<div id="proof-date" style="font-size:12px;opacity:0.6;margin-top:3px;"></div>
+<div style="font-size:11px;color:var(--text-muted);margin-top:8px;padding:6px 8px;background:var(--bg-card2);border-radius:6px;border-left:3px solid var(--gold);">
+          ℹ️ This proof code is only a reference for the parent report. It does not block lessons.
+        </div>
+<button class="btn btn-sm" id="wa-proof-btn" onclick="sendWhatsAppProofReport()" style="background:#25D366;color:#fff;border:none;cursor:pointer;border-radius:8px;padding:7px 14px;font-size:12px;font-weight:700;margin-top:10px;">📲 Share to Father on WhatsApp</button>
+<button class="btn btn-sm" onclick="markFatherSeen({proofCode:document.getElementById('proof-code-val').textContent,score:100,sessionTitle:document.getElementById('proof-topic-name').textContent,classLabel:state.schoolCurrentClass||state.level})" style="background:var(--lapis-light);color:#fff;border:none;cursor:pointer;border-radius:8px;padding:7px 14px;font-size:12px;font-weight:700;margin-top:6px;display:block;width:100%;">👁 Mark as Father Seen</button>
+</div>
+</div>
+</section>
+<!-- ==================== GRAMMAR MINI-CARDS v1.11G ==================== -->
+<section class="screen" id="screen-grammar">
+<div class="page-header">
+<div style="display:flex;align-items:center;gap:10px;">
+<button onclick="navigate('home')" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);color:white;border-radius:8px;padding:7px 12px;cursor:pointer;font-size:14px;font-weight:600;flex-shrink:0;">← Home</button>
+<div>
+<h1 style="font-size:20px;">Grammar World</h1>
+<div class="dari" style="font-size:14px;color:rgba(255,255,255,0.85);">د ګرامر نړۍ · انګلیسي ګرامر</div>
+</div>
+</div>
+</div>
+<div id="grammar-cards-list" style="padding-bottom:24px;"></div>
+</section>
+<!-- ==================== AI CONVERSATION PARTNER ==================== -->
+<div id="ai-conv-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:300;align-items:flex-end;">
+<div style="background:var(--bg-card);border-radius:20px 20px 0 0;width:100%;max-width:640px;margin:0 auto;height:82vh;display:flex;flex-direction:column;">
+<div style="padding:16px;border-bottom:1px solid var(--divider);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;">
+<div>
+<div style="font-size:17px;font-weight:800;">🤖 AI Conversation Partner</div>
+<div class="dari" style="font-size:13px;color:var(--text-muted);">د AI د خبرو ملګری</div>
+</div>
+<div style="display:flex;gap:8px;align-items:center;">
+<select id="conv-lang" style="background:var(--input-bg);border:1px solid var(--border);border-radius:8px;padding:5px 8px;font-size:13px;color:var(--text);">
+<option value="english">🇬🇧 English</option>
+<option value="pashto">🇦🇫 Pashto</option>
+<option selected="" value="parallel">↔️ Both</option>
+</select>
+<button onclick="closeAIConv()" style="background:var(--border);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px;">✕</button>
+</div>
+</div>
+<div id="ai-conv-messages" style="flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:10px;">
+<div class="chat-msg tutor">
+<div>Hello! I'm your Zirak AI tutor. What would you like to talk about today?</div>
+<div class="msg-dari">سلام! زه د ځیرک AI ښوونکی یم. نن د څه په اړه خبرې کول غواړئ؟</div>
+</div>
+</div>
+<div style="padding:12px;border-top:1px solid var(--divider);flex-shrink:0;">
+<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+<button class="btn btn-ghost btn-sm" onclick="sendConvPrompt('Tell me about Afghan culture')">🏛 Culture</button>
+<button class="btn btn-ghost btn-sm" onclick="sendConvPrompt('Help me practice greetings')">👋 Greet</button>
+<button class="btn btn-ghost btn-sm" onclick="sendConvPrompt('Correct my English grammar')">📝 Grammar</button>
+<button class="btn btn-ghost btn-sm" onclick="sendConvPrompt('Tell me a short Afghan folk story')">📖 Story</button>
+</div>
+<div style="display:flex;gap:8px;">
+<input class="text-input" id="conv-input" onkeypress="if(event.key==='Enter')sendConvMessage()" placeholder="Type your message..." style="flex:1;" type="text"/>
+<button class="btn btn-primary btn-sm" onclick="sendConvMessage()" style="flex-shrink:0;">Send</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== WRITING FEEDBACK ==================== -->
+<div id="writing-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:300;align-items:center;justify-content:center;padding:16px;">
+<div style="background:var(--bg-card);border-radius:var(--radius-xl);width:100%;max-width:560px;padding:20px;max-height:88vh;overflow-y:auto;">
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+<div>
+<div style="font-size:17px;font-weight:800;">📝 Writing Feedback</div>
+<div class="dari" style="font-size:13px;color:var(--text-muted);">د لیکنې فیډبک</div>
+</div>
+<button onclick="closeWriting()" style="background:var(--border);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px;">✕</button>
+</div>
+<textarea class="text-input" id="writing-input" placeholder="Write a sentence or paragraph in English or Pashto... / په انګلیسي یا پښتو یوه جمله یا پاراګراف ولیکئ..." rows="5" style="resize:vertical;font-size:15px;line-height:1.7;"></textarea>
+<button class="btn btn-primary btn-full mt-8" onclick="getWritingFeedback()">✨ Get AI Feedback</button>
+<div id="writing-feedback-result" style="margin-top:12px;display:none;">
+<div class="card-inner" id="writing-feedback-content"></div>
+</div>
+</div>
+</div>
+<!-- ==================== SETTINGS DRAWER ==================== -->
+<div id="settings-overlay" onclick="closeSettings()"></div>
+<div id="settings-drawer">
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+<div>
+<div style="font-size:18px;font-weight:800;">Settings</div>
+<div class="dari" style="font-size:16px;color:var(--text-muted);">امستنې</div>
+</div>
+<button class="btn btn-ghost btn-sm" onclick="saveSettingsAndClose()" style="background:var(--lapis,#1a3a5c);color:#fff;border-color:var(--lapis,#1a3a5c);font-weight:700;">💾 Save</button>
+<button class="btn btn-ghost btn-sm" onclick="closeSettings()">✕</button>
+</div>
+<div class="settings-group">
+<div class="settings-label">Language &amp; Display / ژبه او ښودنه</div>
+<div class="settings-row">
+<div>
+<div class="label">Pashto Font Size</div>
+<div class="sublabel">د پښتو لیک اندازه</div>
+</div>
+<select id="set-dari-size" onchange="saveSetting('pashto_font_size', this.value)" style="background:var(--input-bg);border:1px solid var(--border);border-radius:8px;padding:6px;color:var(--text);">
+<option value="small">Small</option>
+<option selected="" value="medium">Medium</option>
+<option value="large">Large</option>
+</select>
+</div>
+<div class="settings-row">
+<div><div class="label">Show Transliteration</div><div class="sublabel">د تلفظ لیکنه ښکاره کړه</div></div>
+<label class="toggle"><input id="set-transliteration" onchange="saveSetting('show_transliteration', this.checked)" type="checkbox"/><span class="toggle-slider"></span></label>
+</div>
+</div>
+<div class="settings-group">
+<div class="settings-label">Speech / غږ/وینا</div>
+<div class="settings-row">
+<div>
+<div class="label">Voice Speed / د غږ چټکتیا</div>
+<div class="sublabel" id="speed-display">1.0x</div>
+</div>
+<input id="set-speed" max="140" min="55" oninput="updateSpeed(this.value)" style="width:110px;" type="range" value="85"/>
+</div>
+<div class="settings-row">
+<div><div class="label">Auto Continue</div><div class="sublabel">اتومات دوام</div></div>
+<label class="toggle"><input id="set-auto-continue" onchange="saveSetting('auto_continue', this.checked)" type="checkbox"/><span class="toggle-slider"></span></label>
+</div>
+</div>
+<div class="settings-group">
+<div class="settings-label">Appearance / بڼه</div>
+<div class="settings-row">
+<div><div class="label">Theme</div><div class="sublabel">تیم</div></div>
+<select id="set-theme" onchange="setTheme(this.value)" style="background:var(--input-bg);border:1px solid var(--border);border-radius:8px;padding:6px;color:var(--text);">
+<option value="light">☀️ Light</option>
+<option value="dark">🌙 Dark</option>
+<option selected="" value="system">🖥 Auto</option>
+</select>
+</div>
+</div>
+<div class="settings-group">
+<div class="settings-label">Learning / زده کړه</div>
+<div class="settings-row">
+<div><div class="label">Daily Goal</div><div class="sublabel">ورځنی هدف</div></div>
+<select id="set-goal" onchange="saveSetting('daily_goal_minutes', parseInt(this.value))" style="background:var(--input-bg);border:1px solid var(--border);border-radius:8px;padding:6px;color:var(--text);">
+<option value="5">5 min</option>
+<option selected="" value="10">10 min</option>
+<option value="15">15 min</option>
+<option value="20">20 min</option>
+</select>
+</div>
+</div>
+<div class="settings-group" id="parent-profile-group">
+<div class="settings-label">👨‍👧 Parent / Student Profile — پروفایل</div>
+<div class="settings-row" style="flex-direction:column;align-items:stretch;gap:8px;">
+<div>
+<div class="label">Student Name / د زده کوونکي نوم</div>
+<input class="text-input" id="pp-student-name" oninput="saveParentProfile()" placeholder="e.g. Ahmad" style="margin-top:4px;width:100%;box-sizing:border-box;" type="text"/>
+</div>
+<div>
+<div class="label">Father Name / د پلار نوم</div>
+<input class="text-input" id="pp-father-name" oninput="saveParentProfile()" placeholder="e.g. Haji Noor" style="margin-top:4px;width:100%;box-sizing:border-box;" type="text"/>
+</div>
+<div>
+<div class="label">Father WhatsApp Number</div>
+<input class="text-input" id="pp-father-wa" oninput="saveParentProfile()" placeholder="e.g. 93701234567" style="margin-top:4px;width:100%;box-sizing:border-box;" type="tel"/>
+<div class="sublabel" style="margin-top:2px;">Include country code, no + or spaces</div>
+</div>
+<div>
+<div class="label">Parent Reference Note (optional)</div>
+<input class="text-input" id="pp-parent-pin" maxlength="4" oninput="saveParentProfile()" placeholder="4-digit PIN" style="margin-top:4px;width:100%;box-sizing:border-box;" type="password"/>
+</div>
+</div>
+</div>
+<div class="settings-group" id="ai-settings-group">
+<div class="settings-label">🤖 AI Settings — Private Testing</div>
+<div class="settings-row" style="flex-direction:column;align-items:stretch;gap:8px;">
+<div>
+<div class="label">AI Provider</div>
+<div class="sublabel">Cohere (command-r-plus)</div>
+</div>
+<div style="display:flex;align-items:center;gap:6px;">
+<input autocapitalize="off" autocomplete="off" autocorrect="off" id="ai-key-input" placeholder="Paste Cohere API key…" spellcheck="false" style="flex:1;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:13px;outline:none;" type="password">
+<button class="btn btn-ghost btn-sm" id="ai-key-eye" onclick="toggleAIKeyVisibility()" style="padding:6px 8px;" title="Show/hide key">👁</button>
+</input></div>
+<div style="display:flex;gap:6px;flex-wrap:wrap;">
+<button class="btn btn-sm" onclick="saveAIKey()" style="background:var(--lapis);color:white;flex:1;">💾 Save API Key</button>
+<button class="btn btn-sm btn-ghost" onclick="clearAIKey()" style="flex:1;">🗑 Clear API Key</button>
+</div>
+<button class="btn btn-sm" onclick="testAIConnection()" style="background:var(--emerald,#34a853);color:white;">🔌 Test AI Connection</button>
+<div id="ai-key-status" style="font-size:12px;color:var(--text-muted);min-height:16px;"></div>
+<div style="font-size:11px;color:var(--text-muted);border-top:1px solid var(--border);padding-top:6px;line-height:1.5;">
+          ⚠️ <strong>Private testing only.</strong> Do not use frontend API keys in production.
+        </div>
+</div>
+</div>
+<div class="settings-group">
+<div class="settings-label">About</div>
+<div class="settings-row">
+<div><div class="label">Version</div><div class="sublabel">zirak-english-v1-17I6H-D20-grammar-seven-level-progression-advanced-academic-routing</div></div>
+<div id="settings-offline-status"></div>
+</div>
+<button class="btn btn-danger btn-sm btn-full mt-8" onclick="if(confirm('Reset all progress?')) resetProgress()">🗑 Reset Progress</button>
+</div>
+</div>
+<!-- ==================== INTERVIEW WIZARD SCREEN v1.16I ==================== -->
+<!-- I6H-D13: Personalized Learning Plan screen -->
+<section class="screen" id="screen-personal-plan">
+<div style="margin:12px 16px 0;">
+<div id="personal-plan-mount"></div>
+</div>
+</section>
+<section class="screen" id="screen-teacher-command-center">
+<div id="teacher-command-center-mount"></div>
+</section>
+<section aria-label="Interview Wizard" class="screen" id="screen-interview-wizard" role="main">
+<div id="iw-screen-root" style="padding-bottom:calc(80px + env(safe-area-inset-bottom));">
+<!-- Rendered by interview-core.js → iwRenderScreen() -->
+<div style="padding:40px 20px;text-align:center;color:var(--text-muted);">Loading Interview Wizard…</div>
+</div>
+</section>
+<!-- ==================== QUICK PRACTICE OVERLAY v1.17A ==================== -->
+<!-- Full-screen overlay. display:none by default. openQuickPractice() shows it. -->
+<div aria-label="Quick Practice" aria-modal="true" id="qp-overlay" role="dialog" style="display:none;position:fixed;inset:0;z-index:600;
+              background:var(--bg,#f0f4f8);
+              flex-direction:column;
+              overflow-y:auto;
+              -webkit-overflow-scrolling:touch;
+              padding-bottom:calc(24px + env(safe-area-inset-bottom));">
+<!-- Sticky header bar -->
+<div style="background:var(--lapis,#1a3a5c);
+                padding:0 16px;
+                height:56px;
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+                position:sticky;
+                top:0;
+                z-index:10;
+                flex-shrink:0;
+                box-shadow:0 2px 8px rgba(0,0,0,0.18);">
+<div style="display:flex;align-items:center;gap:10px;">
+<span style="font-size:22px;line-height:1;">🎯</span>
+<div>
+<div style="font-size:17px;font-weight:900;color:#ffffff;letter-spacing:-0.2px;">Quick Practice</div>
+<div class="dari" style="font-size:11px;color:rgba(255,255,255,0.7);">چټک تمرین</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+<div class="iw-vw-auto-wrap" title="Auto Mode: announce, listen, evaluate, and advance automatically">
+<span class="iw-vw-auto-label">Auto</span>
+<label class="iw-vw-toggle">
+<input id="qp-auto-check" onchange="qpToggleAutoMode(this.checked)" type="checkbox"/>
+<span class="iw-vw-toggle-slider"></span>
+</label>
+</div>
+<button aria-label="Close Quick Practice" onclick="closeQuickPractice()" style="background:rgba(255,255,255,0.18);border:none;color:#fff;
+                     border-radius:50%;width:36px;height:36px;font-size:18px;
+                     cursor:pointer;display:flex;align-items:center;justify-content:center;
+                     flex-shrink:0;-webkit-tap-highlight-color:transparent;" title="Close Quick Practice">✕</button>
+</div>
+</div>
+<!-- Scrollable content area — populated by quick-practice.js -->
+<div id="qp-content" style="padding:16px 16px 32px;max-width:640px;width:100%;
+                                 margin:0 auto;box-sizing:border-box;">
+<div style="text-align:center;padding:40px 20px;color:var(--text-muted,#8a9ab5);">
+        Loading practice content…
+      </div>
+</div>
+</div>
+</div><!-- #app -->
+<!-- ===== UNIVERSAL PRACTICE ENGINE OVERLAY (v1.4) ===== -->
+<div aria-label="Practice Engine" aria-modal="true" id="practice-engine-overlay" role="dialog">
+<div id="practice-engine-panel">
+<div class="pe-header">
+<div class="pe-title" id="pe-title">Practice</div>
+<button aria-label="Close" class="pe-close-btn" onclick="closePracticeEngine()">✕</button>
+</div>
+<div class="pe-progress-bar"><div class="pe-progress-fill" id="pe-progress-fill" style="width:0%"></div></div>
+<!-- Flow toggle -->
+<div class="pe-flow-toggle">
+<button class="pe-flow-btn active" id="pe-auto-btn" onclick="setPracticeFlow('auto')">⚡ Auto</button>
+<button class="pe-flow-btn" id="pe-manual-btn" onclick="setPracticeFlow('manual')">🖐 Manual</button>
+<button class="pe-flow-btn" id="pe-pause-btn" onclick="pePauseToggle()" title="Pause auto-advance">⏸ Pause</button>
+<button class="pe-flow-btn" id="pe-stop-btn" onclick="peStopSession()" title="Stop and preserve this resumable position">⏹ Stop</button>
+</div>
+<div class="pe-pause-indicator" id="pe-pause-indicator">⏸ Auto-advance paused — tap Continue Now to proceed</div>
+<!-- Main content area -->
+<div id="pe-content-area"></div>
+</div>
+</div>
+<script src="./content-core.js"></script>
+<script src="./content-wordlab.js"></script>
+<script src="./content-grammar.js"></script>
+<script src="./content-dialogues.js"></script>
+<script src="./content-review.js"></script>
+<script src="./content.js"></script>
+<script src="./content-pack-registry.js"></script>
+<script src="./content-pack1a.js"></script>
+<script src="./content-pashto-patch.js"></script>
+<script src="./interview-content-pack1.js"></script>
+<script src="./pashto-only-migration.js"></script>
+<script src="./pashto-display-shell.js"></script>
+<script src="./interview-core.js"></script>
+<!-- ZIRAK PROFILE BOOTSTRAP — runs BEFORE app.js so per-student storage namespace is active when app.js builds its state -->
+<script>
+(function(){
+  var ses=''; try{ ses = sessionStorage.getItem('zirak_session')||''; }catch(e){}
+  var sid=''; if(ses.indexOf('student:')===0) sid = ses.slice(8);
+  window.ZIRAK_ACTIVE_STUDENT_ID = sid;
+  window.__zirakNS = function(){ var s = window.ZIRAK_ACTIVE_STUDENT_ID||''; return s ? ('u_'+s+'_') : ''; };
+  if(!ses){
+    /* anti-flash: hide app until the login overlay is built; failsafe reveals after 4s no matter what */
+    try{
+      var st=document.createElement('style'); st.id='zk-prelock';
+      st.textContent='#app{visibility:hidden}'; document.head.appendChild(st);
+      document.documentElement.setAttribute('data-zk-locked','1');
+      setTimeout(function(){ var p=document.getElementById('zk-prelock'); if(p) p.remove(); }, 4000);
+    }catch(e){}
+  }
+})();
+</script>
+<script src="./app.js"></script>
+<!-- ZIRAK PAGE GUIDES (Phase I6B2) — ONE global guide framework; loads after
+     app.js so window.speak exists, and before the render modules that call it. -->
+<script src="./zirak-page-guides.js"></script>
+<script src="./grammar-curriculum-map.js"></script>
+<!-- GRAMMAR LAB ENGINE (Phase I6C) — extends Grammar World in-place: family
+     registry, wizard+test runner, reference index, word-building hooks,
+     planned explainers, weak-record extension. Loads after the curriculum
+     map and page guides; grammar-world.js calls it at render time. -->
+<script src="./grammar-lab-engine.js"></script>
+<!-- FOUNDATION GRAMMAR CONTENT PACK 1 (Phase I6D) — content only; registers
+     10 L1-L3 topics + sessions + reference entries through the engine APIs. -->
+<script src="./grammar-lab-foundation-pack1.js"></script>
+<!-- FOUNDATION GRAMMAR CONTENT PACK 2 (Phase I6E) — content only; appends 9
+     be-verb / demonstrative / possessive topics (path order 11-19) through
+     the same engine registration APIs. Loads AFTER Pack 1. -->
+<script src="./grammar-lab-foundation-pack2.js"></script>
+<!-- FOUNDATION GRAMMAR CONTENT PACK 3 (Phase I6F) — noun phrases, articles, plurals, determiners, path order 20-28. -->
+<script src="./grammar-lab-foundation-pack3.js"></script>
+<!-- FOUNDATION GRAMMAR CONTENT PACK 4 (Phase I6G) — Simple Present and Daily Routine, path order 29-37. -->
+<script src="./grammar-lab-foundation-pack4.js"></script>
+<!-- FOUNDATION GRAMMAR CONTENT PACK 5 (Phase I6H) — Present Continuous / Now Actions, path order 38-46. -->
+<script src="./grammar-lab-foundation-pack5.js"></script>
+<!-- GRAMMAR AUTO-WIZARD (Phase I6G-A) — per-topic Interview-style wizard.
+     Loaded LAST so all packs and registries are complete when it initialises.
+     Adds Auto-Wizard Practice button on every Grammar Lab topic page. -->
+<script src="./grammar-lab-auto-wizard.js"></script>
+<script src="./grammar-world.js"></script>
+<script src="./quick-practice.js"></script>
+<script src="./interview-voice-wizard.js"></script>
+<!-- ZIRAK PROFILE FOUNDATION (Phase 1) — loads last so it can safely wrap navigate()/openSettings() -->
+<script src="./zirak-profile.js"></script>
+<!-- INSTITUTE CALENDAR + LEARNING LEDGER (Phase I6H-C) — loaded AFTER
+     zirak-profile.js so ZirakStorageKey per-student namespace is available. -->
+<script src="./zirak-institute-calendar.js"></script>
+<script src="./zirak-learning-ledger.js"></script>
+<!-- GRAMMAR TEST BLUEPRINT MAP (Phase I6H-D5) — data-only taxonomy.
+     Loaded BEFORE zirak-academy-tests.js so the test generator can
+     optionally consult it; falls back unchanged if absent. -->
+<script src="./grammar-test-blueprints.js"></script>
+<script src="./zirak-academy-tests.js"></script>
+<script src="./zirak-placement-bank.js"></script>
+<script src="./zirak-placement-engine.js"></script>
+<script src="./zirak-personal-learning-plan.js"></script>
+<!-- I6H-D15: Academic Operating System — level authority, Nursery->Starter
+     migration, learner pathways, 90-minute class contract, weekly
+     templates/coverage, Grammar/Dialogue/Interview/Listening routing
+     frameworks, book-program abstraction, Today's Class foundation.
+     Loaded after Profile/Ledger/Plan/Placement/Academy Tests (its
+     data-authority dependencies) and before the Teacher Command Center
+     (which consults it for display labels). Purely additive/orchestrating —
+     does not replace any existing authority. -->
+<script src="./zirak-academic-program.js"></script>
+<!-- I6H-D15B: Content Forensics — pure diagnostic analysis of the real
+     runtime content banks (duplicates, missing metadata, eligibility).
+     Never teaches, scores, or routes content; read-only. Loaded after
+     content.js, grammar-curriculum-map.js, grammar-world.js, and
+     interview-content-pack1.js (the real arrays it inspects). -->
+<script src="./zirak-content-forensics.js"></script>
+<!-- I6H-D16: Curriculum Content Registry — level-based classification,
+     canonicalization, and pack-building for the real Listening,
+     Dialogue, Grammar, and Interview banks. Subordinate to
+     ZirakAcademicProgram; coordinates metadata/eligibility only, never
+     duplicates raw content text. Loaded after its data dependencies
+     (content.js, grammar files, interview files, zirak-academic-program.js). -->
+<script src="./zirak-curriculum-content.js"></script>
+<!-- I6H-D18: Listening Curriculum D18 — authored Intermediate/Advanced/Academic
+     items + 66 curated packs + D16 migration map. Must load AFTER
+     zirak-curriculum-content.js (registers into it). TEST-EVIDENCE not cached. -->
+<script src="./zirak-listening-curriculum-d18.js"></script>
+<!-- I6H-D19: governed, level-based Dialogue candidate curriculum. Registers into the existing ZirakCurriculumContent authority; no second speech engine. -->
+<script src="./zirak-dialogue-curriculum-d19.js"></script>
+<!-- I6H-D20: complete seven-level Grammar curriculum — 69/69 editorial
+     decisions, source crosswalk, 62 adapter nodes (real prerequisites
+     preserved), 83 newly authored nodes (Intermediate/Advanced/Academic
+     content). Registers through the EXISTING ZirakGrammarLab.registerTopics/
+     registerSessions APIs and ONE additive ZirakCurriculumContent method.
+     Must load after grammar-lab-engine.js, all 5 Foundation packs, and
+     zirak-curriculum-content.js. TEST-EVIDENCE not cached. -->
+<script src="./zirak-grammar-curriculum-d20.js"></script>
+<!-- I6H-D14: Teacher Command Center — loaded after profile, ledger, plan
+     engine, placement engine, and academy tests (its data-authority
+     dependencies). Purely additive: does not modify any of them. -->
+<script src="./zirak-teacher-command-center.js"></script>
+<!-- I6H-D10: Academic Achievement Center — loaded after its dependencies
+     (profile, ledger, calendar, blueprints, academy-tests). -->
+<script src="./zirak-achievement-center.js"></script>
+<!-- ZIRAK CLASS PATH (Phase 3) — six-month skeleton; loads after the profile module it depends on -->
+<script src="./zirak-classpath.js"></script>
+<!-- ZIRAK CLASS PATH CONTENT SLOT MAP (Phase H3) — placeholder slot map only; loads after zirak-classpath.js -->
+<script src="./zirak-classpath-content-map.js"></script>
+<!-- ZIRAK REAL CONTENT — Month 1 Week 1 Day 1-5 (Phase H4A/H4B); loads after the content-map module -->
+<script src="./zirak-classpath-real-content-m1w1.js"></script>
+<!-- ZIRAK REAL CONTENT — Month 1 Week 2 Day 1-2 (Phase H5A); loads after the Week 1 real-content file -->
+<script src="./zirak-classpath-real-content-m1w2.js"></script>
+</body>
+</html>

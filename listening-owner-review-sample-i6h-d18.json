@@ -1,0 +1,1307 @@
+{
+  "approvalNotice": "No approval or signature is supplied by D18A. Candidate packs remain unofficial until a real owner/teacher completes this file.",
+  "artifactVersion": "I6H-D18A",
+  "generatedAt": "2026-07-30T00:00:00.000Z",
+  "packSamples": [
+    {
+      "acceptedLevelId": "starter",
+      "actualWordCounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-starter-greetings-01",
+      "pathwayIds": [
+        "child",
+        "teen",
+        "general-adult",
+        "job-professional",
+        "academic-preparation"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-starter-greetings-01-task-01-gist",
+        "listen-d18-starter-greetings-01-task-03-repeat",
+        "listen-d18-starter-greetings-01-task-04-oral"
+      ]
+    },
+    {
+      "acceptedLevelId": "basic",
+      "actualWordCounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-basic-school-01",
+      "pathwayIds": [
+        "child",
+        "teen",
+        "general-adult",
+        "job-professional",
+        "academic-preparation"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-basic-school-01-task-01-gist",
+        "listen-d18-basic-school-01-task-03-repeat",
+        "listen-d18-basic-school-01-task-04-oral"
+      ]
+    },
+    {
+      "acceptedLevelId": "beginner",
+      "actualWordCounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-beginner-daily-01",
+      "pathwayIds": [
+        "child",
+        "teen",
+        "general-adult",
+        "job-professional",
+        "academic-preparation"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-beginner-daily-01-task-01-gist",
+        "listen-d18-beginner-daily-01-task-02-opening",
+        "listen-d18-beginner-daily-01-task-05-sequence",
+        "listen-d18-beginner-daily-01-task-04-oral"
+      ]
+    },
+    {
+      "acceptedLevelId": "elementary",
+      "actualWordCounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-elementary-daily-01",
+      "pathwayIds": [
+        "child",
+        "teen",
+        "general-adult",
+        "job-professional",
+        "academic-preparation"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-elementary-daily-01-task-01-gist",
+        "listen-d18-elementary-daily-01-task-02-opening",
+        "listen-d18-elementary-daily-01-task-05-sequence",
+        "listen-d18-elementary-daily-01-task-04-oral"
+      ]
+    },
+    {
+      "acceptedLevelId": "intermediate",
+      "actualWordCounts": [
+        37,
+        43
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-intermediate-classroom-01",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-intermediate-classroom-01-task-01-gist",
+        "listen-d18-intermediate-classroom-01-task-02-opening",
+        "listen-d18-intermediate-classroom-01-task-05-sequence",
+        "listen-d18-intermediate-classroom-01-task-06-detail",
+        "listen-d18-intermediate-classroom-01-task-04-oral"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        118
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-01",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-01-task-01-gist",
+        "listen-d18-adv-pack-01-task-02-opening",
+        "listen-d18-adv-pack-01-task-05-sequence",
+        "listen-d18-adv-pack-01-task-06-detail",
+        "listen-d18-adv-pack-01-task-03-repeat",
+        "listen-d18-adv-pack-01-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        111
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-02",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-02-task-01-gist",
+        "listen-d18-adv-pack-02-task-02-opening",
+        "listen-d18-adv-pack-02-task-05-sequence",
+        "listen-d18-adv-pack-02-task-06-detail",
+        "listen-d18-adv-pack-02-task-03-repeat",
+        "listen-d18-adv-pack-02-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        129
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-03",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-03-task-01-gist",
+        "listen-d18-adv-pack-03-task-02-opening",
+        "listen-d18-adv-pack-03-task-05-sequence",
+        "listen-d18-adv-pack-03-task-06-detail",
+        "listen-d18-adv-pack-03-task-03-repeat",
+        "listen-d18-adv-pack-03-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        118
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-04",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-04-task-01-gist",
+        "listen-d18-adv-pack-04-task-02-opening",
+        "listen-d18-adv-pack-04-task-05-sequence",
+        "listen-d18-adv-pack-04-task-06-detail",
+        "listen-d18-adv-pack-04-task-03-repeat",
+        "listen-d18-adv-pack-04-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        130
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-05",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-05-task-01-gist",
+        "listen-d18-adv-pack-05-task-02-opening",
+        "listen-d18-adv-pack-05-task-05-sequence",
+        "listen-d18-adv-pack-05-task-06-detail",
+        "listen-d18-adv-pack-05-task-03-repeat",
+        "listen-d18-adv-pack-05-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        115
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-06",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-06-task-01-gist",
+        "listen-d18-adv-pack-06-task-02-opening",
+        "listen-d18-adv-pack-06-task-05-sequence",
+        "listen-d18-adv-pack-06-task-06-detail",
+        "listen-d18-adv-pack-06-task-03-repeat",
+        "listen-d18-adv-pack-06-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        117
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-07",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-07-task-01-gist",
+        "listen-d18-adv-pack-07-task-02-opening",
+        "listen-d18-adv-pack-07-task-05-sequence",
+        "listen-d18-adv-pack-07-task-06-detail",
+        "listen-d18-adv-pack-07-task-03-repeat",
+        "listen-d18-adv-pack-07-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        113
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-08",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-08-task-01-gist",
+        "listen-d18-adv-pack-08-task-02-opening",
+        "listen-d18-adv-pack-08-task-05-sequence",
+        "listen-d18-adv-pack-08-task-06-detail",
+        "listen-d18-adv-pack-08-task-03-repeat",
+        "listen-d18-adv-pack-08-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        118
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-09",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-09-task-01-gist",
+        "listen-d18-adv-pack-09-task-02-opening",
+        "listen-d18-adv-pack-09-task-05-sequence",
+        "listen-d18-adv-pack-09-task-06-detail",
+        "listen-d18-adv-pack-09-task-03-repeat",
+        "listen-d18-adv-pack-09-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "advanced",
+      "actualWordCounts": [
+        126
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-adv-pack-10",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-adv-pack-10-task-01-gist",
+        "listen-d18-adv-pack-10-task-02-opening",
+        "listen-d18-adv-pack-10-task-05-sequence",
+        "listen-d18-adv-pack-10-task-06-detail",
+        "listen-d18-adv-pack-10-task-03-repeat",
+        "listen-d18-adv-pack-10-task-07-keywords"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        154
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-01",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-01-task-01-gist",
+        "listen-d18-aca-pack-01-task-02-opening",
+        "listen-d18-aca-pack-01-task-06-detail",
+        "listen-d18-aca-pack-01-task-07-keywords",
+        "listen-d18-aca-pack-01-task-04-oral",
+        "listen-d18-aca-pack-01-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        172
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-02",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-02-task-01-gist",
+        "listen-d18-aca-pack-02-task-02-opening",
+        "listen-d18-aca-pack-02-task-06-detail",
+        "listen-d18-aca-pack-02-task-07-keywords",
+        "listen-d18-aca-pack-02-task-04-oral",
+        "listen-d18-aca-pack-02-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        177
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-03",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-03-task-01-gist",
+        "listen-d18-aca-pack-03-task-02-opening",
+        "listen-d18-aca-pack-03-task-06-detail",
+        "listen-d18-aca-pack-03-task-07-keywords",
+        "listen-d18-aca-pack-03-task-04-oral",
+        "listen-d18-aca-pack-03-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        165
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-04",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-04-task-01-gist",
+        "listen-d18-aca-pack-04-task-02-opening",
+        "listen-d18-aca-pack-04-task-06-detail",
+        "listen-d18-aca-pack-04-task-07-keywords",
+        "listen-d18-aca-pack-04-task-04-oral",
+        "listen-d18-aca-pack-04-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        156
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-05",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-05-task-01-gist",
+        "listen-d18-aca-pack-05-task-02-opening",
+        "listen-d18-aca-pack-05-task-06-detail",
+        "listen-d18-aca-pack-05-task-07-keywords",
+        "listen-d18-aca-pack-05-task-04-oral",
+        "listen-d18-aca-pack-05-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        166
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-06",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-06-task-01-gist",
+        "listen-d18-aca-pack-06-task-02-opening",
+        "listen-d18-aca-pack-06-task-06-detail",
+        "listen-d18-aca-pack-06-task-07-keywords",
+        "listen-d18-aca-pack-06-task-04-oral",
+        "listen-d18-aca-pack-06-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        174
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-07",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-07-task-01-gist",
+        "listen-d18-aca-pack-07-task-02-opening",
+        "listen-d18-aca-pack-07-task-06-detail",
+        "listen-d18-aca-pack-07-task-07-keywords",
+        "listen-d18-aca-pack-07-task-04-oral",
+        "listen-d18-aca-pack-07-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        156
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-08",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-08-task-01-gist",
+        "listen-d18-aca-pack-08-task-02-opening",
+        "listen-d18-aca-pack-08-task-06-detail",
+        "listen-d18-aca-pack-08-task-07-keywords",
+        "listen-d18-aca-pack-08-task-04-oral",
+        "listen-d18-aca-pack-08-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        145
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-09",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-09-task-01-gist",
+        "listen-d18-aca-pack-09-task-02-opening",
+        "listen-d18-aca-pack-09-task-06-detail",
+        "listen-d18-aca-pack-09-task-07-keywords",
+        "listen-d18-aca-pack-09-task-04-oral",
+        "listen-d18-aca-pack-09-task-08-review"
+      ]
+    },
+    {
+      "acceptedLevelId": "academic",
+      "actualWordCounts": [
+        177
+      ],
+      "ownerApprovalStatus": "pending",
+      "packId": "listen-d18-aca-pack-10",
+      "pathwayIds": [
+        "teen",
+        "general-adult",
+        "job-professional"
+      ],
+      "reviewerDecision": "",
+      "reviewerNotes": "",
+      "taskIds": [
+        "listen-d18-aca-pack-10-task-01-gist",
+        "listen-d18-aca-pack-10-task-02-opening",
+        "listen-d18-aca-pack-10-task-06-detail",
+        "listen-d18-aca-pack-10-task-07-keywords",
+        "listen-d18-aca-pack-10-task-04-oral",
+        "listen-d18-aca-pack-10-task-08-review"
+      ]
+    }
+  ],
+  "representativeLegacyRelevels": [
+    {
+      "canonicalListeningId": "listen-c-0011",
+      "category": "food-and-drink",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "starter",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "Can you repeat that, please?",
+      "exactEnglishTextHash": "7835ad721627104315155df41c815e333dbc19b59ed19059b4145d0062f13ed4",
+      "exactSupportText": "مهرباني وکړئ، دا بیا تکرارولی شئ؟",
+      "exactSupportTextHash": "e9bebcd4d97fe536c9abdbc6d73129081839c211c2d9cd849356ad85b7edb8ae",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-10"
+      ],
+      "legacyIndices": [
+        10
+      ],
+      "listeningDemandType": "short-utterance-recognition",
+      "maximumEligibleLevel": "basic",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "academic",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0011",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 5 words, complexity score 37. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "food-and-drink",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0014",
+      "category": "education",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "basic",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "Excuse me, where is the school?",
+      "exactEnglishTextHash": "ceb8f9f83cae6236cba2268fd878222c83530bd5279fe184a6c0cdb8d088c82f",
+      "exactSupportText": "وبښئ، ښوونځی چېرته دی؟",
+      "exactSupportTextHash": "e1971d0dfa27a949523e3e011cf9814bc6e3fac92fbccc34f8155d561d5a2d1d",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-13"
+      ],
+      "legacyIndices": [
+        13
+      ],
+      "listeningDemandType": "simple-sentence-recognition",
+      "maximumEligibleLevel": "beginner",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0014",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 6 words, complexity score 30. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "education",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0024",
+      "category": "food-and-drink",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "basic",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "I eat bread and eggs for breakfast.",
+      "exactEnglishTextHash": "f3dc18b6569c22e7deb8a62512cb8628badd3a6a5e357fe769122b8ce7e3a251",
+      "exactSupportText": "زه په سباناري کې ډوډۍ او هګۍ خورم.",
+      "exactSupportTextHash": "88cd161d9e42d9262b68a6f925cb52b5538a173710a52b0800c91729987a1f4d",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-23"
+      ],
+      "legacyIndices": [
+        23
+      ],
+      "listeningDemandType": "simple-sentence-recognition",
+      "maximumEligibleLevel": "beginner",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0024",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 7 words, complexity score 32. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "food-and-drink",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0059",
+      "category": "food-and-drink",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "basic",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "I would like chicken and rice.",
+      "exactEnglishTextHash": "a55e63b1def425fe3e4383caa289a45fc59686b760608c1ad341579213cc1260",
+      "exactSupportText": "زه چرګ او وریجې غواړم.",
+      "exactSupportTextHash": "aadbe3548edc5da5546d5868f6ec8ddee3f98c4302b2edb07c6445146a12c53b",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-58"
+      ],
+      "legacyIndices": [
+        58
+      ],
+      "listeningDemandType": "simple-sentence-recognition",
+      "maximumEligibleLevel": "beginner",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0059",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 6 words, complexity score 30. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "food-and-drink",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0068",
+      "category": "general-conversation",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "starter",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "My flight is delayed.",
+      "exactEnglishTextHash": "93e3efe1d9b8e4020b011376157384520e06e173e30c2f5c52b66fdb6ad039ac",
+      "exactSupportText": "زما الوتنه ځنډېدلې ده.",
+      "exactSupportTextHash": "bb41a786a01b133d9b02f82194722df2d61546f16e492f790adcdd4b7ceebced",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-67"
+      ],
+      "legacyIndices": [
+        67
+      ],
+      "listeningDemandType": "short-utterance-recognition",
+      "maximumEligibleLevel": "basic",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0068",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 4 words, complexity score 29. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "general-conversation",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0090",
+      "category": "communication",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "basic",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "Ask a question if you need help.",
+      "exactEnglishTextHash": "7744dcb7a371beeb96f4af9179991746389ceabe1586352b95d6900b31ef6e4d",
+      "exactSupportText": "که مرستې ته اړتیا لرئ، پوښتنه وکړئ.",
+      "exactSupportTextHash": "a1965bf9227b8838543561a2bd06f731ec5ee0f4b7ca284229060a0d64e74e0c",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-89"
+      ],
+      "legacyIndices": [
+        89
+      ],
+      "listeningDemandType": "simple-sentence-recognition",
+      "maximumEligibleLevel": "beginner",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "academic",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0090",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 7 words, complexity score 33. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "communication",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0097",
+      "category": "general-conversation",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "starter",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "No problem, please come in.",
+      "exactEnglishTextHash": "af32eb661309da3375320f41d82fd5336f704943891c6fe29bd3acd7adbf3bc3",
+      "exactSupportText": "هېڅ خبره نه ده، مهرباني وکړئ دننه راشئ.",
+      "exactSupportTextHash": "ea7bd5e8a942c63bdce824a56e1480e824fc5da1e80dad400fdefd9aad06f047",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-96"
+      ],
+      "legacyIndices": [
+        96
+      ],
+      "listeningDemandType": "short-utterance-recognition",
+      "maximumEligibleLevel": "basic",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0097",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 5 words, complexity score 29. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "general-conversation",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0112",
+      "category": "food-and-drink",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "starter",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "Guests are welcomed with tea.",
+      "exactEnglishTextHash": "6ece626f9310b311323a91ae4f238dc795524dcf61c2a71f6dea9f9e4e00a36d",
+      "exactSupportText": "مېلمانه په چای هرکلی کېږي.",
+      "exactSupportTextHash": "317f4ec336726d49cb9bedba428a79e9f6d7093c2128d37ded18a687c303f893",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-111"
+      ],
+      "legacyIndices": [
+        111
+      ],
+      "listeningDemandType": "short-utterance-recognition",
+      "maximumEligibleLevel": "basic",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0112",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 5 words, complexity score 30. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "food-and-drink",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0116",
+      "category": "general-conversation",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "basic",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "Poetry is loved in our culture.",
+      "exactEnglishTextHash": "9fee1388eb4048390208793f0c55f82f2fa74c35538c005144d202802940eeb9",
+      "exactSupportText": "زموږ په کلتور کې شعر ډېر خوښېږي.",
+      "exactSupportTextHash": "96b9c16450fcde2f380fc872d5150a48fd12f1eb56c3256b595301ffd066f3b4",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-115"
+      ],
+      "legacyIndices": [
+        115
+      ],
+      "listeningDemandType": "simple-sentence-recognition",
+      "maximumEligibleLevel": "beginner",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0116",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 6 words, complexity score 31. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "general-conversation",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0122",
+      "category": "general-conversation",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "basic",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "In my opinion, practice is important.",
+      "exactEnglishTextHash": "eee266f72b1c060cbd0b355db6c067baf49f46302fec53adaa2e86fae3ca594b",
+      "exactSupportText": "زما په نظر تمرین مهم دی.",
+      "exactSupportTextHash": "511df0314eb6afedccbfafd5bf926f36a1df95b6238f6d05afa5faf494872a47",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-121"
+      ],
+      "legacyIndices": [
+        121
+      ],
+      "listeningDemandType": "simple-sentence-recognition",
+      "maximumEligibleLevel": "beginner",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0122",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 6 words, complexity score 30. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "general-conversation",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0128",
+      "category": "education",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "basic",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "For example, students can study at home.",
+      "exactEnglishTextHash": "ae032f25a7f95a432a62ec77455166f03ad79c83d64b0d70ea6b697de4b25f9e",
+      "exactSupportText": "د بېلګې په توګه، زده کوونکي په کور کې زده کړه کولی شي.",
+      "exactSupportTextHash": "aee9cb8497d14c5cb4fd730e69d3d4381ab9ec7cc89a239854c5f1ea3caa8152",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-127"
+      ],
+      "legacyIndices": [
+        127
+      ],
+      "listeningDemandType": "simple-sentence-recognition",
+      "maximumEligibleLevel": "beginner",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "advanced",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0128",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 7 words, complexity score 32. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "education",
+      "translationStatus": "present-unverified"
+    },
+    {
+      "canonicalListeningId": "listen-c-0129",
+      "category": "general-conversation",
+      "classificationStatus": "phase-reviewed",
+      "d18ReviewedLevel": "starter",
+      "defectCodes": [
+        "owner-approval-pending",
+        "pashto-human-review-pending"
+      ],
+      "disposition": "relevel",
+      "editorialStatus": "phase-reviewed",
+      "exactEnglishText": "In conclusion, balance is important.",
+      "exactEnglishTextHash": "c4cf8b923bb52cf68df5129545a00716086892e22a005b13dd5eb97873288d71",
+      "exactSupportText": "په پایله کې، توازن مهم دی.",
+      "exactSupportTextHash": "1a80688876165f3270732686a66db3bcb032cc0cdce0c09495cca7442a17fbdb",
+      "freePracticeEligible": true,
+      "integrityStatus": "phase-verified",
+      "legacyAliases": [
+        "legacy-idx-128"
+      ],
+      "legacyIndices": [
+        128
+      ],
+      "listeningDemandType": "short-utterance-recognition",
+      "maximumEligibleLevel": "basic",
+      "minimumEligibleLevel": "starter",
+      "officialCandidateEligible": true,
+      "officialCurriculumEligible": false,
+      "ownerApprovalStatus": "pending",
+      "previousD16AssignedLevel": "academic",
+      "provenance": {
+        "licenseOrPermissionStatus": "academy-owned",
+        "originType": "legacy-project-internal",
+        "sourceId": "listen-c-0129",
+        "verificationStatus": "phase-verified"
+      },
+      "rationale": "Editorial review used absolute utterance length, grammar density, clause/marker complexity, and communicative purpose; 5 words, complexity score 43. Boundary ties were resolved by sentence structure rather than percentile rank alone.",
+      "recordVersion": "D18A-1",
+      "responsibleNextReviewPhase": "D25",
+      "reviewTimestamp": "2026-07-30T00:00:00.000Z",
+      "reviewerRole": "phase-editorial-review",
+      "supportTextStatus": "present-unverified",
+      "theme": "general-conversation",
+      "translationStatus": "present-unverified"
+    }
+  ],
+  "requiredChecks": [
+    "level suitability",
+    "pathway suitability",
+    "task quality",
+    "actual word count",
+    "translation uncertainty",
+    "owner approval"
+  ],
+  "reviewStatus": "pending-owner-or-teacher-action",
+  "reviewer": {
+    "decision": "",
+    "name": "",
+    "reviewedAt": "",
+    "role": "",
+    "signature": ""
+  },
+  "translationUncertainties": [
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0001",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0002",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0003",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0004",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0005",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0006",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0007",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0008",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0009",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-aca-0010",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0001",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0002",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0003",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0004",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0005",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0006",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0007",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0008",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0009",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-adv-0010",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0001",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0002",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0003",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0004",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0005",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0006",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0007",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0008",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0009",
+      "translationStatus": "phase-translated-unverified"
+    },
+    {
+      "concern": "Full Pashto passage remains unverified; phrase support must not be represented as owner-approved translation.",
+      "contentId": "listen-d18-int-0010",
+      "translationStatus": "phase-translated-unverified"
+    }
+  ]
+}

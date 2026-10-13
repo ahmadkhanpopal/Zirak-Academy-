@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "D20-1",
+  "phase": "I6H-D20",
+  "total": 15,
+  "entries": [
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f008"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.subject-pronouns"
+      },
+      "relationship": "same-concept-alias",
+      "masteryConceptId": "grammar-concept-subject-pronouns",
+      "rationale": "Both teach subject pronouns (I/you/he/she/it/we/they) at the introductory level; merged to one mastery concept to prevent duplicate mastery credit."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f001"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.word-vs-sentence"
+      },
+      "relationship": "same-concept-alias",
+      "masteryConceptId": "grammar-concept-sentence-basics",
+      "rationale": "Both teach the word-vs-sentence foundational distinction."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f002"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.subject-verb"
+      },
+      "relationship": "same-concept-alias",
+      "masteryConceptId": "grammar-concept-subject-verb",
+      "rationale": "Both teach subject+verb sentence structure."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f003"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.subject-verb-object"
+      },
+      "relationship": "same-concept-alias",
+      "masteryConceptId": "grammar-concept-subject-verb-object",
+      "rationale": "Both teach subject-verb-object sentence structure."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f004"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.noun-basics"
+      },
+      "relationship": "same-concept-alias",
+      "masteryConceptId": "grammar-concept-noun-basics",
+      "rationale": "Both teach basic noun recognition."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_001"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.am-is-are"
+      },
+      "relationship": "same-concept-alias",
+      "masteryConceptId": "grammar-concept-be-verb",
+      "rationale": "Both teach the am/is/are be-verb paradigm at a similar consolidation level."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.subject-pronouns"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.subject-pronouns-deeper"
+      },
+      "relationship": "deeper-version",
+      "masteryConceptId": "grammar-concept-subject-pronouns",
+      "rationale": "subject-pronouns-deeper extends the base topic with additional practice; kept as a deeper-version reference under the same mastery concept, not a separate mastery."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_004"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-world-d20-new",
+        "sourceTopicId": "grammar-d20-basic-can-cannot"
+      },
+      "relationship": "deeper-version",
+      "masteryConceptId": "grammar-concept-can-cannot",
+      "rationale": "gw_004 (beginner2→Beginner) is the deeper/consolidation version; the new D20 Basic-level can/cannot topic is the simpler prerequisite version for earlier learners."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_005"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-world-d20-new",
+        "sourceTopicId": "grammar-d20-elementary-modals-ability-permission-advice"
+      },
+      "relationship": "prerequisite",
+      "masteryConceptId": "grammar-concept-modals-should",
+      "rationale": "gw_005 (should/shouldn't, beginner2→Beginner) is a prerequisite building block for the fuller Elementary-level modal set (ability/permission/advice/obligation)."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.countable-uncountable-basic"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-world-d20-new",
+        "sourceTopicId": "grammar-d20-basic-countable-intro"
+      },
+      "relationship": "deeper-version",
+      "masteryConceptId": "grammar-concept-countable-uncountable",
+      "rationale": "The GL topic (levelNumber3→Beginner) is the deeper version; the new D20 Basic-level topic is a simpler introduction, both under one mastery concept with level-appropriate demand."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.some-any-basic"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.many-much-basic"
+      },
+      "relationship": "complementary-skill",
+      "masteryConceptId": null,
+      "rationale": "some/any and many/much are related quantifier topics taught side by side but target distinct grammar points; not aliased."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_003"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.present-continuous-meaning"
+      },
+      "relationship": "same-concept-alias",
+      "masteryConceptId": "grammar-concept-present-continuous",
+      "rationale": "Both introduce Present Continuous meaning/form; gw_003 mapped Beginner (beginner2), GL topic mapped Beginner (levelNumber3) — same accepted level and same concept, aliased."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_002"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-lab-foundation",
+        "sourceTopicId": "gl.topic.simple-present-yes-no-questions"
+      },
+      "relationship": "deeper-version",
+      "masteryConceptId": "grammar-concept-do-does-questions",
+      "rationale": "gw_002 (do/does, beginner1→Basic) is a simpler introduction; the GL yes/no-questions topic (levelNumber3→Beginner) is the deeper consolidation."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f018"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f012"
+      },
+      "relationship": "complementary-skill",
+      "masteryConceptId": null,
+      "rationale": "Pronunciation trouble spots and silent letters are related pronunciation-support topics but target distinct sound issues; not aliased."
+    },
+    {
+      "pairA": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f013"
+      },
+      "pairB": {
+        "sourceSystem": "grammar-world",
+        "sourceTopicId": "gw_f016"
+      },
+      "relationship": "complementary-skill",
+      "masteryConceptId": null,
+      "rationale": "Homophones and minimal pairs both address confusable words but from different angles (spelling vs sound); not aliased."
+    }
+  ]
+}

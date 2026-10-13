@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "D20-1",
+  "phase": "I6H-D20",
+  "ownerApprovalStatus": "pending",
+  "sampleCount": 21,
+  "records": [
+    {
+      "grammarCurriculumId": "grammar-d20-starter-be-positive",
+      "acceptedLevelId": "starter",
+      "titleEn": "I am / You are / He is (Positive)",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-starter-be-negative",
+      "acceptedLevelId": "starter",
+      "titleEn": "am/is/are Negatives",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-starter-be-questions",
+      "acceptedLevelId": "starter",
+      "titleEn": "am/is/are Yes/No Questions",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-basic-can-cannot",
+      "acceptedLevelId": "basic",
+      "titleEn": "can / cannot (Basic Ability)",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-basic-there-is-are",
+      "acceptedLevelId": "basic",
+      "titleEn": "there is / there are",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-basic-frequency-adverbs",
+      "acceptedLevelId": "basic",
+      "titleEn": "Frequency Adverbs (always, usually, often, sometimes, never)",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-beginner-past-simple-positive",
+      "acceptedLevelId": "beginner",
+      "titleEn": "Past Simple: Positive (Regular Verbs)",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-beginner-past-simple-irregular",
+      "acceptedLevelId": "beginner",
+      "titleEn": "Past Simple: Common Irregular Verbs",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-beginner-past-simple-negative-questions",
+      "acceptedLevelId": "beginner",
+      "titleEn": "Past Simple: Negative and Questions",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-elementary-past-continuous",
+      "acceptedLevelId": "elementary",
+      "titleEn": "Past Continuous",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-elementary-past-simple-vs-continuous",
+      "acceptedLevelId": "elementary",
+      "titleEn": "Past Simple vs Past Continuous",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-elementary-present-perfect-intro",
+      "acceptedLevelId": "elementary",
+      "titleEn": "Present Perfect: Introduction",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-intermediate-perfect-vs-past-simple",
+      "acceptedLevelId": "intermediate",
+      "titleEn": "Present Perfect vs Past Simple (Deeper)",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-intermediate-present-perfect-continuous",
+      "acceptedLevelId": "intermediate",
+      "titleEn": "Present Perfect Continuous",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-intermediate-passive-across-tenses",
+      "acceptedLevelId": "intermediate",
+      "titleEn": "Passive Voice Across Common Tenses",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-advanced-mixed-conditionals",
+      "acceptedLevelId": "advanced",
+      "titleEn": "Mixed Conditionals",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-advanced-advanced-passive-reporting",
+      "acceptedLevelId": "advanced",
+      "titleEn": "Advanced Passive and Reporting Passive",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-advanced-inversion",
+      "acceptedLevelId": "advanced",
+      "titleEn": "Inversion After Negative or Limiting Expressions",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-academic-nominalization",
+      "acceptedLevelId": "academic",
+      "titleEn": "Nominalization",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-academic-reporting-verbs",
+      "acceptedLevelId": "academic",
+      "titleEn": "Reporting Verbs and Reporting Patterns",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    },
+    {
+      "grammarCurriculumId": "grammar-d20-academic-cautious-claims",
+      "acceptedLevelId": "academic",
+      "titleEn": "Cautious Claims and Calibrated Certainty",
+      "ownerApprovalStatus": "pending-owner-review",
+      "translationStatus": "phase-reviewed-unverified",
+      "reviewNote": "Phase-reviewed candidate; requires owner sign-off on English accuracy and Pashto translation before officialCurriculumEligible can be set true."
+    }
+  ]
+}
